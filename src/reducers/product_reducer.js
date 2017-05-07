@@ -2,6 +2,7 @@ import * as type from '../constants/actionTypes';
 import initialState from './initialState';
 
 export default function (state = initialState.products, action) {
+	console.log(`reducers`, action)
 	switch (action.type) {
 	case type.LOAD_ITEMS:
 		return [ ...action.payload ];

@@ -14,8 +14,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link href="../style/v4/dist/toolkit.min.css" rel="stylesheet">
   </head>
   <body>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -27,8 +29,20 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
-    <script src=".././src/lib/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src=".././src/lib/js/bootstrap.min.js"></script>
+    <script src="../style/v4/dist/toolkit.min.js"></script>
+    <script src="../style/v4/docs/assets/js/jquery.min.js"></script>
+    <script src="../style/v4/docs/assets/js/tether.min.js"></script>
+    <script src="../style/v4/docs/assets/js/chart.js"></script>
+    <script src="../style/v4/docs/assets/js/toolkit.js"></script>
+    <script src="../style/v4/docs/assets/js/application.js"></script>
+    <script>
+	    // execute/clear BS loaders for docs
+	    $(function(){
+		    if (window.BS&&window.BS.loader&&window.BS.loader.length) {
+			    while(BS.loader.length){(BS.loader.pop())()}
+		    }
+	    })
+    </script>
+
   </body>
 </html>
