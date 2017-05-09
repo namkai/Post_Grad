@@ -6,7 +6,7 @@ import 'rxjs';
 import '../style/v4/dist/toolkit.css';
 
 import App from './components/App';
-import Profile from './components/Feed/Feed';
+import Feed from './components/Feed/Feed';
 import LoginForm from './components/LoginForm';
 import configureStore from './store/configureStore';
 
@@ -17,7 +17,7 @@ ReactDOM.render(
 		<Router history={ browserHistory }>
 			<div>
 				<Route path="/" component={ App } />
-				<Route path="/feed" component={ Profile } />
+				<Route path="/feed" component={ Feed } />
 				<Route path="/auth" component={ LoginForm } />
 			</div>
 		</Router>

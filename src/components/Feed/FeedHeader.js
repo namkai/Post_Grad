@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import headshot from '../../../style/assets/headshot-namkai.jpg';
 
-const ProfileHeader = ({ user }) => (
+const FeedHeader = ({ user }) => (
 	<div className="card card-profile mb-4">
 		<div className="card-header" style={ { backgroundImage: `url(${ user.backgroundPhoto })` } }/>
 		<div className="card-block text-center">
@@ -38,4 +38,4 @@ const ProfileHeader = ({ user }) => (
 	</div>
 );
 
-export default connect(({ user }) => ({ user }))(ProfileHeader);
+export default connect(({ user }) => ({ user }))(FeedHeader);

@@ -1,13 +1,13 @@
 import React from 'react';
-import ProfileBody from './FeedBody';
-import ProfileHeader from './FeedHeader';
-import ProfilePhotos from './FeedPhotos';
+import FeedBody from './FeedBody';
+import FeedHeader from './FeedHeader';
+import FeedPhotos from './FeedPhotos';
 
 const ProfileAbout = () => (
 	<div className="col-lg-3">
-		<ProfileHeader />
-		<ProfileBody />
-		<ProfilePhotos />
+		<FeedHeader />
+		<FeedBody />
+		<FeedPhotos />
 	</div>
 );
 

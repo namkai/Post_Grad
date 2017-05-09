@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
 import Photo from './Photo';
 
-class ProfilePhotos extends Component {
+class FeedPhotos extends Component {
 	componentDidMount() {
 
 	}
@@ -28,4 +27,4 @@ class ProfilePhotos extends Component {
 	}
 }
 
-export default connect(({ user }) => ({ user }))(ProfilePhotos);
+export default connect(({ user }) => ({ user }))(FeedPhotos);

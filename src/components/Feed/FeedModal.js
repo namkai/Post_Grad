@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProfileModal = () => (
+const FeedModal = () => (
 	<div
   className="modal fade" id="userModal" tabIndex="-1" role="dialog" aria-labelledby="userModal"
   aria-hidden="true"
@@ -59,4 +59,4 @@ const ProfileModal = () => (
 	</div>
 	);
 
-export default ProfileModal;
+export default FeedModal;

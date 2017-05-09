@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProfileBody = () => (
+const FeedBody = () => (
 	<div className="card visible-md-block visible-lg-block mb-4">
 		<div className="card-block">
 			<h6 className="mb-3">About
@@ -17,4 +17,4 @@ const ProfileBody = () => (
 	</div>
 );
 
-export default ProfileBody;
+export default FeedBody;
