@@ -76,7 +76,7 @@ class LoginForm extends Component {
 							/>
 						</div>
 						<div className="form-group mb-3">
-							<GoogleAuth/>
+							<GoogleAuth router={this.context.router} />
 						</div>
 
 						<div className="mb-5">
