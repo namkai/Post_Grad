@@ -1,6 +1,6 @@
 import React from 'react';
-import ProfileAbout from './ProfileAbout';
-import ProfileModal from './ProfileModal';
+import ProfileAbout from './FeedAbout';
+import ProfileModal from './FeedModal';
 import requireAuth from '../HOC/Require_Authentication';
 
 const Profile = () => {

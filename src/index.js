@@ -6,7 +6,7 @@ import 'rxjs';
 import '../style/v4/dist/toolkit.css';
 
 import App from './components/App';
-import Profile from './components/Profile/Profile';
+import Profile from './components/Feed/Feed';
 import LoginForm from './components/LoginForm';
 import configureStore from './store/configureStore';
 
