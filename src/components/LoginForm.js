@@ -1,6 +1,9 @@
 import firebase from 'firebase';
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import logo from '../../style/v4/docs/assets/img/brand.png';
+import * as auth from '../actions/authentication_actions';
 
 class LoginForm extends Component {
 	constructor(props) {
@@ -12,20 +15,28 @@ class LoginForm extends Component {
 		};
 	}
 
+	static contextTypes = {
+		router: React.PropTypes.object,
+	};
+
 	onButtonPress = (event) => {
-		console.log(`i'm hit!`)
+		console.log(`i'm hit!`);
 		event.preventDefault();
 		const { email, password } = this.state;
 		console.log(email, password);
-
-		firebase.auth().signInWithEmailAndPassword(email, password).catch((error) => {
+		try {
+			firebase.auth().signInWithEmailAndPassword(email, password).then(response => {
+				this.props.authenticate(true).then(this.context.router.history.push('/feed'));
+			});
+		}
+		catch (error) {
 			console.log('i\'m the error', error);
 			firebase.auth().createUserWithEmailAndPassword(email, password).catch((NewError) => {
 				console.log('I\'m the error to create a user', NewError);
 				this.setState({ error: 'Authentication Failed.' });
 			});
-		});
-	}
+		}
+	};
 
 	render() {
 		return (
@@ -57,7 +68,7 @@ class LoginForm extends Component {
 								placeholder="Password"
 								value={ this.state.password }
 								onChange={(e) => {
-									const password = e.target.value
+									const password = e.target.value;
 									return this.setState({ password });
 								}}
 							/>
@@ -89,8 +100,8 @@ const style = {
 	errorTextStyle: {
 		alignSelf: 'center',
 		color: 'red',
-		fontWeight: 'bold'
-	}
+		fontWeight: 'bold',
+	},
 };
 
-export default LoginForm;
+export default connect(null, auth)(LoginForm);
