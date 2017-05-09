@@ -1,6 +1,7 @@
 import firebase from 'firebase';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import GoogleAuth from './GoogleAuth';
 
 import logo from '../../style/v4/docs/assets/img/brand.png';
 import * as auth from '../actions/authentication_actions';
@@ -25,8 +26,8 @@ class LoginForm extends Component {
 		console.log(email, password);
 
 		try {
-			firebase.auth().signInWithEmailAndPassword(email, password).then(response => {
-				this.props.authenticate(true)
+			firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
+				this.props.authenticate(true);
 				this.context.router.history.push('/feed');
 			});
 		}
@@ -68,11 +69,14 @@ class LoginForm extends Component {
 								type="password" className="form-control"
 								placeholder="Password"
 								value={ this.state.password }
-								onChange={(e) => {
+								onChange={e => {
 									const password = e.target.value;
 									return this.setState({ password });
 								}}
 							/>
+						</div>
+						<div className="form-group mb-3">
+							<GoogleAuth/>
 						</div>
 
 						<div className="mb-5">
