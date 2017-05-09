@@ -1,10 +1,4 @@
 export default {
-	products: [],
-
-	coords: {
-		lat: 122,
-		lng: 37,
-	},
 	user: {
 		name: 'Namkai Fairfield',
 		bio: 'Software Engineer working in SF',
@@ -16,10 +10,6 @@ export default {
 			hometown: 'Greenbrae, CA',
 			work: 'Galvanize',
 		},
+		projects: [],
 	},
-	stores: 2,
-	oneStore: [],
-	twoStore: [],
-	threeStore: [],
-
 };

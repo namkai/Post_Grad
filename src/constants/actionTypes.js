@@ -1,6 +1,6 @@
 // Product actiontypes
+
 export const FETCH_ITEMS = 'FETCH_ITEMS';
-export const GET_ITEM = 'GET_ITEM';
 export const REMOVE_ITEM = 'REMOVE_ITEM';
 export const LOAD_ITEMS = 'LOAD_ITEMS';
 export const CANCEL_SEARCH = 'CANCEL_SEARCH';

@@ -20,13 +20,14 @@ class LoginForm extends Component {
 	};
 
 	onButtonPress = (event) => {
-		console.log(`i'm hit!`);
 		event.preventDefault();
 		const { email, password } = this.state;
 		console.log(email, password);
+
 		try {
 			firebase.auth().signInWithEmailAndPassword(email, password).then(response => {
-				this.props.authenticate(true).then(this.context.router.history.push('/feed'));
+				this.props.authenticate(true)
+				this.context.router.history.push('/feed');
 			});
 		}
 		catch (error) {
