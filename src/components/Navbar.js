@@ -1,76 +1,92 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import headshot from '../../style/assets/headshot-namkai.jpg';
 import logo from '../../style/v4/docs/assets/img/brand-white.png';
 
-const Navbar = props => (
-	<nav className="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary app-navbar">
-		<button
-  className="navbar-toggler navbar-toggler-right hidden-md-up"
-  type="button"
-  data-toggle="collapse"
-  data-target="#navbarResponsive"
-  aria-controls="navbarResponsive"
-  aria-expanded="false"
-  aria-label="Toggle navigation"
-		>
-			<span className="navbar-toggler-icon" />
-		</button>
-
-		<a className="navbar-brand" href="index.html">
-			<img src={ logo } alt="brand" style={ { height: 20 } } />
-		</a>
-
-		<div className="collapse navbar-collapse" id="navbarResponsive">
-			<ul className="navbar-nav mr-auto">
-				<li className="nav-item active">
-					<a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
-				</li>
+const Navbar = props => {
+	const authentication = () => {
+		console.log(props, `Navbar Props`);
+		if (props.authenticated) {
+			return (
+				<button className="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
+					<img className="rounded-circle" src={ headshot }/>
+				</button>
+			);
+		}
+		return (
 				<li className="nav-item">
-					<a className="nav-link" href="profile/index.html">Profile</a>
+					<a className="nav-link" href="docs/index.html">Log In</a>
 				</li>
-				<li className="nav-item">
-					<a className="nav-link" data-toggle="modal" href="#msgModal">Messages</a>
-				</li>
-				<li className="nav-item">
-					<a className="nav-link" href="docs/index.html">Docs</a>
-				</li>
+		);
+	};
+	return (
+		<nav className="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-primary app-navbar">
+			<button
+				className="navbar-toggler navbar-toggler-right hidden-md-up"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarResponsive"
+				aria-controls="navbarResponsive"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span className="navbar-toggler-icon"/>
+			</button>
 
-				<li className="nav-item hidden-md-up">
-					<a className="nav-link" href="notifications/index.html">Notifications</a>
-				</li>
-				<li className="nav-item hidden-md-up">
-					<a className="nav-link" data-action="growl">Growl</a>
-				</li>
-				<li className="nav-item hidden-md-up">
-					<a className="nav-link" href="login/index.html">Logout</a>
-				</li>
+			<a className="navbar-brand" href="index.html">
+				<img src={ logo } alt="brand" style={ { height: 23 } }/>
+			</a>
 
-			</ul>
+			<div className="collapse navbar-collapse" id="navbarResponsive">
+				<ul className="navbar-nav mr-auto">
+					<li className="nav-item active">
+						<a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+					</li>
+					<li className="nav-item">
+						<a className="nav-link" href="profile/index.html">Profile</a>
+					</li>
+					<li className="nav-item">
+						<a className="nav-link" data-toggle="modal" href="#msgModal">Messages</a>
+					</li>
+					<li className="nav-item">
+						<a className="nav-link" href="docs/index.html">Docs</a>
+					</li>
 
-			<form className="form-inline float-right hidden-sm-down">
-				<input className="form-control" type="text" data-action="grow" placeholder="Search" />
-			</form>
+					<li className="nav-item hidden-md-up">
+						<a className="nav-link" href="notifications/index.html">Notifications</a>
+					</li>
+					<li className="nav-item hidden-md-up">
+						<a className="nav-link" data-action="growl">Growl</a>
+					</li>
+					<li className="nav-item hidden-md-up">
+						<a className="nav-link" href="login/index.html">Logout</a>
+					</li>
 
-			<ul id="#js-popoverContent" className="nav navbar-nav float-right mr-0 hidden-sm-down">
-				<li className="nav-item">
-					<a className="app-notifications nav-link" href="notifications/index.html">
-						<span className="icon icon-bell" />
-					</a>
-				</li>
-				<li className="nav-item ml-2">
-					<button className="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
-						<img className="rounded-circle" src={ headshot } />
-					</button>
-				</li>
-			</ul>
+				</ul>
 
-			<ul className="nav navbar-nav hidden-xs-up" id="js-popoverContent">
-				<li className="nav-item"><a className="nav-link" href="#" data-action="growl">Growl</a></li>
-				<li className="nav-item"><a className="nav-link" href="login/index.html">Logout</a></li>
-			</ul>
-		</div>
-	</nav>
-);
+				<form className="form-inline float-right hidden-sm-down">
+					<input className="form-control" type="text" data-action="grow" placeholder="Search"/>
+				</form>
+
+				<ul id="#js-popoverContent" className="nav navbar-nav float-right mr-0 hidden-sm-down">
+					<li className="nav-item">
+						<a className="app-notifications nav-link" href="notifications/index.html">
+							<span className="icon icon-bell"/>
+						</a>
+					</li>
+					<li className="nav-item ml-2">
+						{authentication()}
+					</li>
+				</ul>
+
+				<ul className="nav navbar-nav hidden-xs-up" id="js-popoverContent">
+					<li className="nav-item"><a className="nav-link" href="#" data-action="growl">Growl</a></li>
+					<li className="nav-item"><a className="nav-link" href="login/index.html">Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+	);
+};
 
 const style = {
 	nav: {
@@ -79,4 +95,4 @@ const style = {
 	},
 };
 
-export default Navbar;
+export default connect(({ authenticated }) => ({ authenticated }))(Navbar);

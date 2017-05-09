@@ -1,11 +1,11 @@
 import React from 'react';
 import ProfileAbout from './ProfileAbout';
 import ProfileModal from './ProfileModal';
+import requireAuth from '../HOC/Require_Authentication';
 
 const Profile = () => {
 	return (
 		<div>
-			<ProfileModal/>
 		<div className="container pt-4">
 			<div className="row">
 				<ProfileAbout/>
@@ -15,5 +15,4 @@ const Profile = () => {
 	);
 };
 
-
-export default Profile;
+export default requireAuth(Profile);
