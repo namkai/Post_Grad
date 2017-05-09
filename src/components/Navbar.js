@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import headshot from '../../style/assets/headshot-namkai.jpg';
 import logo from '../../style/v4/docs/assets/img/brand-white.png';
 
@@ -15,7 +16,7 @@ const Navbar = props => {
 		}
 		return (
 				<li className="nav-item">
-					<a className="nav-link" href="docs/index.html">Log In</a>
+					<NavLink className="nav-link" to="/auth">Log In</NavLink>
 				</li>
 		);
 	};
