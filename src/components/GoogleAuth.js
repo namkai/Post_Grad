@@ -4,12 +4,9 @@ import { connect } from 'react-redux';
 import * as actions from '../actions/authentication_actions';
 
 const GoogleAuth = ({ user, redirect, authenticate }) => {
-	console.log(redirect, `i'm redirect`)
 	const signIn = () => {
 		const provider = new firebase.auth.GoogleAuthProvider();
 		firebase.auth().signInWithPopup(provider).then((result) => {
-			console.log(`i worked!`, result);
-			console.log(`i'm hit! 1`)
 			authenticate(true);
 			const token = result.credential.accessToken;
 			window.localStorage.setItem('PostGrad', token);

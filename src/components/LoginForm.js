@@ -1,10 +1,11 @@
 import firebase from 'firebase';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import GoogleAuth from './GoogleAuth';
 
 import logo from '../../style/v4/docs/assets/img/brand.png';
 import * as auth from '../actions/authentication_actions';
+import GoogleAuth from './GoogleAuth';
+import GithubAuth from './GithubAuth';
 
 class LoginForm extends Component {
 	constructor(props) {
@@ -19,6 +20,17 @@ class LoginForm extends Component {
 	static contextTypes = {
 		router: React.PropTypes.object,
 	};
+	componentWillMount() {
+		const token = window.localStorage.getItem("PostGrad");
+		try {
+			firebase.auth().signInWithCustomToken(token).then(response => {
+				console.log(response)
+			})
+		} catch(error) {
+			console.log(error, `i'm the error`)
+		}
+
+	}
 
 	onButtonPress = (event) => {
 		event.preventDefault();
@@ -40,7 +52,7 @@ class LoginForm extends Component {
 		}
 	};
 	redirect = () => {
-		this.context.router.history.push('/feed')
+		this.context.router.history.push('/feed');
 	};
 
 	render() {
@@ -80,6 +92,9 @@ class LoginForm extends Component {
 						</div>
 						<div className="form-group mb-3">
 							<GoogleAuth redirect={this.redirect} />
+						</div>
+						<div className="form-group mb-3">
+							<GithubAuth redirect={this.redirect} />
 						</div>
 
 						<div className="mb-5">
