@@ -29,8 +29,8 @@ const FeedHeader = ({ user }) => (
 
 				<li className="card-menu-item">
 					<a href="#userModal" className="text-inherit" data-toggle="modal">
-						Enemies
-						<h6 className="my-0">1</h6>
+						Projects
+						<h6 className="my-0">100</h6>
 					</a>
 				</li>
 			</ul>

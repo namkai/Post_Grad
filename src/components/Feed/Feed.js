@@ -1,18 +1,15 @@
 import React from 'react';
-import ProfileAbout from './FeedAbout';
-import ProfileModal from './FeedModal';
 import requireAuth from '../HOC/Require_Authentication';
+import FeedAbout from './FeedAbout';
 
-const Profile = () => {
-	return (
-		<div>
+const Profile = () => (
+	<div>
 		<div className="container pt-4">
 			<div className="row">
-				<ProfileAbout/>
+				<FeedAbout />
 			</div>
 		</div>
-		</div>
-	);
-};
+	</div>
+);
 
 export default requireAuth(Profile);

@@ -13,3 +13,5 @@ export default {
 		projects: [],
 	},
 };
+
+// friends will be an object;
