@@ -13,6 +13,7 @@ class LoginForm extends Component {
 			email: '',
 			password: '',
 			error: '',
+			auth: false,
 		};
 	}
 
@@ -28,7 +29,7 @@ class LoginForm extends Component {
 		try {
 			firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
 				this.props.authenticate(true);
-				this.context.router.history.push('/feed');
+				this.redirect();
 			});
 		}
 		catch (error) {
@@ -38,6 +39,9 @@ class LoginForm extends Component {
 				this.setState({ error: 'Authentication Failed.' });
 			});
 		}
+	};
+	redirect = () => {
+		this.context.router.history.push('/feed')
 	};
 
 	render() {
@@ -76,7 +80,7 @@ class LoginForm extends Component {
 							/>
 						</div>
 						<div className="form-group mb-3">
-							<GoogleAuth router={this.context.router} />
+							<GoogleAuth redirect={this.redirect} />
 						</div>
 
 						<div className="mb-5">

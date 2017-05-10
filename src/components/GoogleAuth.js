@@ -3,20 +3,19 @@ import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions/authentication_actions';
 
-const GoogleAuth = ({ user, router }) => {
+const GoogleAuth = ({ user, redirect, authenticate }) => {
+	console.log(redirect, `i'm redirect`)
 	const signIn = () => {
 		const provider = new firebase.auth.GoogleAuthProvider();
 		firebase.auth().signInWithPopup(provider).then((result) => {
 			console.log(`i worked!`, result);
+			console.log(`i'm hit! 1`)
+			authenticate(true);
+			redirect();
 			// This gives you a Google Access Token. You can use it to access the Google API.
 			const token = result.credential.accessToken;
 			// The signed-in user info.
 			const currentUser = result.user;
-
-			console.log(user, `i'm the user`);
-			this.props.authenticate(true);
-			router.history.push('/feed');
-
 		}).catch((error) => {
 			// Handle Errors here.
 			const errorCode = error.code;
