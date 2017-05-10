@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const FeedBody = ({ user }) => (
+const FeedBody = ({ user, newUser }) => (
 	<div className="card visible-md-block visible-lg-block mb-4">
 		<div className="card-block">
 			<h6 className="mb-3">About
@@ -18,4 +18,4 @@ const FeedBody = ({ user }) => (
 	</div>
 );
 
-export default connect(({ user }) => ({ user }))(FeedBody);
+export default connect(({ user, newUser }) => ({ user, newUser }))(FeedBody);

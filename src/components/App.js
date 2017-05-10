@@ -2,6 +2,8 @@ import firebase from 'firebase';
 import 'firebase/auth';
 import React, { Component } from 'react';
 import Navbar from './Navbar';
+import { connect } from 'react-redux';
+import * as actions from '../actions/user_actions';
 
 class App extends Component {
 	componentWillMount() {
@@ -12,6 +14,12 @@ class App extends Component {
 			projectId: 'portfolio-d6396',
 			storageBucket: 'portfolio-d6396.appspot.com',
 			messagingSenderId: '892183671230',
+		});
+		firebase.auth().onAuthStateChanged(user => {
+			if (user) {
+				console.log(`i'm the user~!`, user);
+				this.props.addUser(user);
+			}
 		});
 	}
 
@@ -24,4 +32,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default connect(null, actions)(App);

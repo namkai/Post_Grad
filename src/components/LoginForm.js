@@ -22,6 +22,7 @@ class LoginForm extends Component {
 	};
 	componentWillMount() {
 		const token = window.localStorage.getItem("PostGrad");
+		console.log(typeof token, `i'm the token`)
 		try {
 			firebase.auth().signInWithCustomToken(token).then(response => {
 				console.log(response)
