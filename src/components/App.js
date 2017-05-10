@@ -17,7 +17,6 @@ class App extends Component {
 		});
 		firebase.auth().onAuthStateChanged(user => {
 			if (user) {
-				console.log(`i'm the user~!`, user);
 				this.props.addUser(user);
 			}
 		});

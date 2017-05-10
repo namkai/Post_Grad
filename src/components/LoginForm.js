@@ -20,18 +20,6 @@ class LoginForm extends Component {
 	static contextTypes = {
 		router: React.PropTypes.object,
 	};
-	componentWillMount() {
-		const token = window.localStorage.getItem("PostGrad");
-		console.log(typeof token, `i'm the token`)
-		try {
-			firebase.auth().signInWithCustomToken(token).then(response => {
-				console.log(response)
-			})
-		} catch(error) {
-			console.log(error, `i'm the error`)
-		}
-
-	}
 
 	onButtonPress = (event) => {
 		event.preventDefault();
@@ -39,7 +27,7 @@ class LoginForm extends Component {
 		console.log(email, password);
 
 		try {
-			firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
+			firebase.auth().signInWithEmailAndPassword(email, password).then((response) => {
 				this.props.authenticate(true);
 				this.redirect();
 			});

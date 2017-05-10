@@ -1,23 +1,27 @@
+import firebase from 'firebase';
 import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import headshot from '../../style/assets/headshot-namkai.jpg';
 import logo from '../../style/v4/docs/assets/img/brand-white.png';
 
-const Navbar = props => {
+const Navbar = (props) => {
 	const authentication = () => {
-		console.log(props, `Navbar Props`);
-		if (props.authenticated) {
+		console.log(props, 'Navbar Props');
+		if (firebase.auth().currentUser !== null) {
+			const logOut = () => {
+				firebase.auth().signOut();
+			};
 			return (
 				<button className="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
-					<img className="rounded-circle" src={ headshot }/>
+					<img className="rounded-circle" src={ headshot } onClick={ () => logOut() }/>
 				</button>
 			);
 		}
 		return (
-				<li className="nav-item">
-					<NavLink className="nav-link" to="/auth">Log In</NavLink>
-				</li>
+			<li className="nav-item">
+				<NavLink className="nav-link" to="/auth">Log In</NavLink>
+			</li>
 		);
 	};
 	return (

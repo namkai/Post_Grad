@@ -1,4 +1,4 @@
-import { auth } from 'firebase';
+import firebase, { auth, } from 'firebase';
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions/authentication_actions';
@@ -10,8 +10,6 @@ const GithubAuth = ({ user, redirect, authenticate }) => {
 			authenticate(true);
 			const currentUser = result.user;
 			const token = result.credential.accessToken;
-			console.log(currentUser);
-			window.localStorage.setItem('PostGrad', token);
 			redirect();
 			// This gives you a Google Access Token. You can use it to access the Google API.
 			// The signed-in user info
