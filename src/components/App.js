@@ -13,6 +13,7 @@ class App extends Component {
 			storageBucket: 'portfolio-d6396.appspot.com',
 			messagingSenderId: '892183671230',
 		});
+		const token = window.localStorage.getItem("PostGrad");
 	}
 
 	render() {

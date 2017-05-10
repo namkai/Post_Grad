@@ -11,9 +11,10 @@ const GoogleAuth = ({ user, redirect, authenticate }) => {
 			console.log(`i worked!`, result);
 			console.log(`i'm hit! 1`)
 			authenticate(true);
+			const token = result.credential.accessToken;
+			window.localStorage.setItem('PostGrad', token);
 			redirect();
 			// This gives you a Google Access Token. You can use it to access the Google API.
-			const token = result.credential.accessToken;
 			// The signed-in user info.
 			const currentUser = result.user;
 		}).catch((error) => {
