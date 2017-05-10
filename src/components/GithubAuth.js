@@ -7,14 +7,14 @@ const GithubAuth = ({ user, redirect, authenticate }) => {
 	const signIn = () => {
 		const githubprovider = new auth.GithubAuthProvider();
 		auth().signInWithPopup(githubprovider).then((result) => {
-			console.log('success!');
 			authenticate(true);
+			const currentUser = result.user;
 			const token = result.credential.accessToken;
+			console.log(currentUser);
 			window.localStorage.setItem('PostGrad', token);
 			redirect();
 			// This gives you a Google Access Token. You can use it to access the Google API.
-			// The signed-in user info.
-			const currentUser = result.user;
+			// The signed-in user info
 		}).catch((error) => {
 			if (error.code === 'auth/account-exists-with-different-credential') {
 				// Step 2.
@@ -31,12 +31,12 @@ const GithubAuth = ({ user, redirect, authenticate }) => {
 					if (providers[ 0 ] === 'password') {
 						// Asks the user his password.
 						// In real scenario, you should handle this asynchronously.
-						const password = auth().promptUserForPassword();
-						auth.signInWithEmailAndPassword(email, password).then(user =>
+						const password = prompt('enter password!')
+						auth().signInWithEmailAndPassword(email, password).then(user =>
 							// Step 4a.
 							user.link(pendingCred)).then(() => {
 							// GitHub account successfully linked to the existing Firebase user.
-								authenticate();
+								authenticate(true);
 								redirect();
 							});
 						return;
@@ -70,7 +70,7 @@ const GithubAuth = ({ user, redirect, authenticate }) => {
 	};
 	return (
 		<button className="btn btn" type="button" onClick={ () => signIn() }>
-			<span className="icon icon-github-with-circle" />
+			<span className="icon icon-github" />
 			<span /> Sign in with Github
 		</button>
 	);
