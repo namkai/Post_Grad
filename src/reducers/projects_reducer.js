@@ -1,7 +1,7 @@
 import * as type from '../constants/actionTypes';
-import initialState from './initialState';
+import projectState from './projectState';
 
-export default function (state = initialState.projects, action) {
+export default function (state = projectState, action) {
 	switch (action.type) {
 	default:
 		return state;
