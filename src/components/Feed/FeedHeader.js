@@ -1,17 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import headshot from '../../../style/assets/headshot-namkai.jpg';
 
 const FeedHeader = ({ user }) => (
 	<div className="card card-profile mb-4">
 		<div className="card-header" style={ { backgroundImage: `url(${ user.backgroundPhoto })` } }/>
 		<div className="card-block text-center">
-			<a href="profile/index.html">
+			<Link to="/profile">
 				<img
 					className="card-profile-img"
 					src={ headshot }
 				/>
-			</a>
+			</Link>
 
 			<h6 className="card-title">
 				<a className="text-inherit" href="profile/index.html">{user.name}</a>

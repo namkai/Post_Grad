@@ -1,5 +1,4 @@
 import React from 'react';
-import requireAuth from '../HOC/Require_Authentication';
 import FeedAbout from './FeedAbout';
 
 const Profile = () => (
@@ -12,4 +11,4 @@ const Profile = () => (
 	</div>
 );
 
-export default requireAuth(Profile);
+export default Profile;

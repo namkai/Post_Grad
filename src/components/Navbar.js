@@ -46,10 +46,10 @@ const Navbar = ({ authenticate }) => {
 			<div className="collapse navbar-collapse" id="navbarResponsive">
 				<ul className="navbar-nav mr-auto">
 					<li className="nav-item active">
-						<a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+						<NavLink className="nav-link" to="/feed">Home <span className="sr-only">(current)</span></NavLink>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="profile/index.html">Profile</a>
+						<NavLink className="nav-link" to="/profile">Profile</NavLink>
 					</li>
 					<li className="nav-item">
 						<a className="nav-link" data-toggle="modal" href="#msgModal">Messages</a>

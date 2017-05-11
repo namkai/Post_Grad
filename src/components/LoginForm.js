@@ -21,8 +21,8 @@ class LoginForm extends Component {
 	};
 	componentWillMount() {
 		firebase.auth().onAuthStateChanged(user => {
-			console.log(user,`i'm the user! in LOGINFORM`)
 			if(user){
+				console.log(user, `i'm the user!`)
 				this.props.authenticate(true)
 				this.redirect();
 			}

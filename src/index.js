@@ -7,7 +7,10 @@ import '../style/v4/dist/toolkit.css';
 
 import App from './components/App';
 import Feed from './components/Feed/Feed';
+
+import requireAuth from './components/HOC/Require_Authentication';
 import LoginForm from './components/LoginForm';
+import Profile from './components/Profile/Profile';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
@@ -17,10 +20,10 @@ ReactDOM.render(
 		<Router history={ browserHistory }>
 			<div>
 				<Route path="/" component={ App } />
-				<Route path="/feed" component={ Feed } />
+				<Route path="/feed" component={ requireAuth(Feed) } />
 				<Route path="/auth" component={ LoginForm } />
+				<Route path="/profile" component={ Profile } />
 			</div>
 		</Router>
 	</Provider>,
-	document.getElementById('root'),
-);
+	document.getElementById('root'));
