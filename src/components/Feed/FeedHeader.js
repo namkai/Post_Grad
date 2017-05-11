@@ -7,7 +7,7 @@ const FeedHeader = ({ user }) => (
 	<div className="card card-profile mb-4">
 		<div className="card-header" style={ { backgroundImage: `url(${ user.backgroundPhoto })` } }/>
 		<div className="card-block text-center">
-			<Link to="/profile">
+			<Link to="/profile/projects">
 				<img
 					className="card-profile-img"
 					src={ headshot }

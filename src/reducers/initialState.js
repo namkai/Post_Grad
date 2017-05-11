@@ -5,7 +5,7 @@ export default {
 		friends: 200,
 		profilePhoto: `https://lh3.googleusercontent.com/-4C-v5v1v2_g/AAAAAAAAAAI/AAAAAAAAAGg/k3n6WqzwE_g/photo.jpg`,
 		photos: [ 'http://i.imgur.com/gzrI6nM.jpg', 'http://i.imgur.com/Vi5wpUV.jpg', 'http://i.imgur.com/dmwRv4U.jpg' ],
-		backgroundPhoto: 'https://i.redditmedia.com/E9rcAZ9ku88fP8lNC74fNOrAst-3hK2FgSQ3yGhMI88.jpg?w=1024&s=9df285f3ccc76f978e9bda421f952d3a',
+		backgroundPhoto: 'http://wallpapercave.com/wp/Klx4EgE.jpg',
 		about: {
 			lives: 'Novato, CA',
 			hometown: 'Greenbrae, CA',

@@ -49,7 +49,7 @@ const Navbar = ({ authenticate, authenticated }) => {
 						<NavLink className="nav-link" to="/feed">Home <span className="sr-only">(current)</span></NavLink>
 					</li>
 					<li className="nav-item">
-						<NavLink className="nav-link" to="/profile">Profile</NavLink>
+						<NavLink className="nav-link" to="/profile/projects">Profile</NavLink>
 					</li>
 					<li className="nav-item">
 						<a className="nav-link" data-toggle="modal" href="#msgModal">Messages</a>
