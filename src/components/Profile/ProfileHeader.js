@@ -23,7 +23,7 @@ const ProfileHeader = ({ user }) => (
 					<Link className="nav-link" to="/profile/posts" >Posts</Link>
 				</li>
 				<li className="nav-item">
-					<Link className="nav-link" to="#">Anothers</Link>
+					<Link className="nav-link" to="/profile/about">About</Link>
 				</li>
 			</ul>
 		</nav>

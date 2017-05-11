@@ -6,7 +6,11 @@ const ProjectList = ({ projects }) => {
 	const renderProjects = projects.projects.map(project => <Project { ...project } />);
 	return (
 		<div className="container my-4">
-			{renderProjects}
+			<div className="card-deck">
+				<div className="row">
+					{renderProjects}
+				</div>
+			</div>
 		</div>
 	);
 };

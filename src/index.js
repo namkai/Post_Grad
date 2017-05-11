@@ -11,6 +11,8 @@ import requireAuth from './components/HOC/Require_Authentication';
 import LoginForm from './components/LoginForm';
 import Profile from './components/Profile/Profile';
 import ProjectList from './components/ProjectList';
+import About from './components/About';
+
 import configureStore from './store/configureStore';
 
 const store = configureStore();
@@ -24,6 +26,7 @@ ReactDOM.render(
 				<Route path="/auth" component={ LoginForm } />
 				<Route path="/profile" component={ Profile } />
 				<Route path="/profile/projects" component={ ProjectList } />
+				<Route path="/profile/about" component={ About } />
 			</div>
 		</Router>
 	</Provider>,
