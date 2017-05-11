@@ -1,27 +1,24 @@
-import { auth } from 'firebase';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { auth } from 'firebase';
 
 export default function (ComposedComponent) {
 	class Authentication extends Component {
 		static contextTypes = {
-			router: React.PropTypes.object,
+			router: React.PropTypes.object
 		};
-
-		componentWillMount() {
-			console.log(auth().currentUser, `i'm the current user`)
-			if (auth().currentUser === null) {
-				this.context.router.history.push('/auth');
-			}
+		componentWillMount(){
+			if(!this.props.authenticated)
+				this.context.router.history.push('/auth')
 		}
-
-		componentWillUpdate(nextProps) {
-			if (auth().currentUser === null) {
-				this.context.router.history.push('/auth');
-			}
+		componentWillUpdate(nextProps){
+			if(!this.props.authenticated)
+				this.context.router.history.push('/auth')
 		}
-
 		render() {
+			if(!this.props.authenticated) {
+				this.context.router.history.push('/auth')
+			}
 			return (
 				<ComposedComponent {...this.props} />
 			);
@@ -30,5 +27,4 @@ export default function (ComposedComponent) {
 
 	return connect(({ authenticated }) => ({ authenticated }))(Authentication);
 }
-
 

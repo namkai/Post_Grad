@@ -2,14 +2,15 @@ import firebase from 'firebase';
 import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import * as auth from '../actions/authentication_actions';
 import headshot from '../../style/assets/headshot-namkai.jpg';
 import logo from '../../style/v4/docs/assets/img/brand-white.png';
 
-const Navbar = (props) => {
+const Navbar = ({ authenticate }) => {
 	const authentication = () => {
-		console.log(props, 'Navbar Props');
 		if (firebase.auth().currentUser !== null) {
 			const logOut = () => {
+				authenticate(false);
 				firebase.auth().signOut();
 			};
 			return (
@@ -100,4 +101,4 @@ const style = {
 	},
 };
 
-export default connect(({ authenticated }) => ({ authenticated }))(Navbar);
+export default connect(({ authenticated }) => ({ authenticated }), auth)(Navbar);

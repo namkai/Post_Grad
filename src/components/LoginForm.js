@@ -16,11 +16,18 @@ class LoginForm extends Component {
 			error: '',
 		};
 	}
-
 	static contextTypes = {
 		router: React.PropTypes.object,
 	};
-
+	componentWillMount() {
+		firebase.auth().onAuthStateChanged(user => {
+			console.log(user,`i'm the user! in LOGINFORM`)
+			if(user){
+				this.props.authenticate(true)
+				this.redirect();
+			}
+		})
+	}
 	onButtonPress = (event) => {
 		event.preventDefault();
 		const { email, password } = this.state;
