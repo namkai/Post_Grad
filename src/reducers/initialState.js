@@ -11,9 +11,9 @@ export default {
 			hometown: 'Greenbrae, CA',
 			work: 'Galvanize',
 		},
-		projects: [],
 	},
-	newUser: {}
+	projects: [],
+	newUser: {},
 };
 
 // friends will be an object;

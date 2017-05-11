@@ -6,9 +6,9 @@ import * as auth from '../actions/authentication_actions';
 import headshot from '../../style/assets/headshot-namkai.jpg';
 import logo from '../../style/v4/docs/assets/img/brand-white.png';
 
-const Navbar = ({ authenticate }) => {
+const Navbar = ({ authenticate, authenticated }) => {
 	const authentication = () => {
-		if (firebase.auth().currentUser !== null) {
+		if (authenticated) {
 			const logOut = () => {
 				authenticate(false);
 				firebase.auth().signOut();

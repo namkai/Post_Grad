@@ -7,10 +7,10 @@ import '../style/v4/dist/toolkit.css';
 
 import App from './components/App';
 import Feed from './components/Feed/Feed';
-
 import requireAuth from './components/HOC/Require_Authentication';
 import LoginForm from './components/LoginForm';
 import Profile from './components/Profile/Profile';
+import ProjectList from './components/ProjectList';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
@@ -23,6 +23,7 @@ ReactDOM.render(
 				<Route path="/feed" component={ requireAuth(Feed) } />
 				<Route path="/auth" component={ LoginForm } />
 				<Route path="/profile" component={ Profile } />
+				<Route path="/profile/projects" component={ ProjectList } />
 			</div>
 		</Router>
 	</Provider>,
