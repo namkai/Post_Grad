@@ -10,7 +10,7 @@ class CodeResult extends Component {
 	}
 
 	runCode = (func) => {
-		this.setState({ codeResult: eval(func) });
+		this.setState({ codeResult: `${eval(func)}` });
 	};
 
 	render() {
