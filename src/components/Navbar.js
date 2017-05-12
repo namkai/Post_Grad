@@ -55,7 +55,7 @@ const Navbar = ({ authenticate, authenticated }) => {
 						<a className="nav-link" data-toggle="modal" href="#msgModal">Messages</a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="docs/index.html">Docs</a>
+						<NavLink className="nav-link" to="/room">CodeRoom</NavLink>
 					</li>
 
 					<li className="nav-item hidden-md-up">

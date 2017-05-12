@@ -1,4 +1,4 @@
-## Feed.js.js header
+## index.js.js header
 
 Simple profile headers to show off a user's profile information
 
