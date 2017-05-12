@@ -16,7 +16,7 @@ const ProfileHeader = ({ user }) => (
 
 		<nav className="profile-header-nav">
 			<ul className="nav nav-tabs justify-content-center">
-				<li className="nav-item">
+				<li className="nav-item active">
 					<Link className="nav-link" to="/profile/projects">Projects</Link>
 				</li>
 				<li className="nav-item">
