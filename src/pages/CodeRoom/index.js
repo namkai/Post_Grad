@@ -4,6 +4,7 @@ import 'codemirror/theme/monokai.css';
 // src/components/Room.js
 import React, { Component } from 'react';
 import Codemirror from 'react-codemirror';
+import CodeResult from './CodeResult';
 import io from 'socket.io-client';
 const socket = io();
 
@@ -20,7 +21,6 @@ class Room extends Component {
 	}
 
 	updateCodeFromSockets(payload) {
-		console.log(payload)
 		this.setState({ code: payload.newCode });
 	}
 
@@ -50,7 +50,6 @@ class Room extends Component {
 			mode: 'javascript',
 			theme: 'monokai',
 		};
-		console.log(this.state.code);
 		return (
 			<div className="container">
 				<h1>Code Challenge</h1>
@@ -60,6 +59,7 @@ class Room extends Component {
 					onChange={this.updateCodeInState}
 					options={ options }
 				/>
+				<CodeResult code={this.state.code} />
 			</div>
 		);
 	}
