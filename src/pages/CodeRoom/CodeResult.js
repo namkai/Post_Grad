@@ -16,8 +16,9 @@ class CodeResult extends Component {
 		return (
 			<div>
 				<button onClick={() => this.runCode(this.props.code)}>Run Code</button>
-				<div>
-					<textarea  readOnly={true} type="text" value={this.state.codeResult} />
+					<div className="form-group">
+						<label htmlFor="result"></label>
+					<textarea  id="result" readOnly={true} type="text" className="form-control" rows="5" value={this.state.codeResult} />
 				</div>
 			</div>
 		);
