@@ -6,19 +6,21 @@ class CodeResult extends Component {
 
 		this.state = {
 			codeResult: 0,
-		}
+		};
 	}
+
 	runCode = (func) => {
-		let testFunc = new Function(`return ${func}`)
-		this.setState({codeResult: testFunc()()})
+		this.setState({ codeResult: eval(func) });
 	};
+
 	render() {
 		return (
 			<div>
 				<button onClick={() => this.runCode(this.props.code)}>Run Code</button>
-					<div className="form-group">
-						<label htmlFor="result"></label>
-					<textarea  id="result" readOnly={true} type="text" className="form-control" rows="5" value={this.state.codeResult} />
+				<div className="form-group">
+					<label htmlFor="result"/>
+					<textarea id="result" readOnly={true} type="text" className="form-control" rows="5"
+					          value={this.state.codeResult}/>
 				</div>
 			</div>
 		);

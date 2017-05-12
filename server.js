@@ -23,7 +23,7 @@ const server = app.listen(port, (err) => {
 const io = require('socket.io')(server);
 
 io.on('connection', (socket) => {
-	console.log('a user connected');
+	console.log('a user connected', socket.user);
 
 	socket.on('disconnect', () => {
 		console.log('user disconnected');
@@ -41,4 +41,5 @@ io.on('connection', (socket) => {
 		socket.broadcast.to(data.room).emit('receive code',
 			data);
 	});
+
 });
