@@ -5,7 +5,7 @@ class CodeResult extends Component {
 		super(props);
 
 		this.state = {
-			codeResult: 0,
+			codeResult: '',
 		};
 	}
 

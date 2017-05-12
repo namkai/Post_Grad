@@ -4,10 +4,10 @@ import 'codemirror/theme/monokai.css';
 // src/components/Room.js
 import React, { Component } from 'react';
 import Codemirror from 'react-codemirror';
-import CodeResult from './CodeResult';
 import io from 'socket.io-client';
+import CodeResult from './CodeResult';
 const socket = io();
-
+import '../../../style/CodeRoom.css'
 
 class Room extends Component {
 	constructor(props) {
@@ -54,12 +54,19 @@ class Room extends Component {
 			<div className="container">
 				<h1>Code Challenge</h1>
 				<p>Solve this challenge</p>
-				<Codemirror
-					value={ this.state.code}
-					onChange={this.updateCodeInState}
-					options={ options }
-				/>
-				<CodeResult code={this.state.code} />
+				<div className="row">
+					<div className="col-md-6">
+						<Codemirror
+							value={ this.state.code}
+							onChange={this.updateCodeInState}
+							options={ options }
+						/>
+						<CodeResult code={this.state.code}/>
+					</div>
+					<div className="col-md-6">
+						<h1>test</h1>
+					</div>
+				</div>
 			</div>
 		);
 	}
