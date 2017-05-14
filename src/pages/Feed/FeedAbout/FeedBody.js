@@ -9,8 +9,7 @@ const FeedBody = ({ user, newUser }) => (
 			</h6>
 			<ul className="list-unstyled list-spaced">
 				<li><span className="text-muted icon icon-calendar mr-3"/>Went to <a href="#">{user.about.lives}</a></li>
-				<li><span className="text-muted icon icon-users mr-3"/>Became friends with <a href="#">Obama</a></li>
-				<li><span className="text-muted icon icon-github mr-3"/>Worked at <a href="#">{user.about.work}</a></li>
+				<li><span className="text-muted icon icon-briefcase mr-3"/>Worked at <a href="#">{user.about.work}</a></li>
 				<li><span className="text-muted icon icon-home mr-3"/>Lives in <a href="#">{user.about.lives}</a></li>
 				<li><span className="text-muted icon icon-location-pin mr-3"/>From <a href="#">{user.about.hometown}</a></li>
 			</ul>

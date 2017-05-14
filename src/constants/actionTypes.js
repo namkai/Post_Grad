@@ -8,3 +8,6 @@ export const CHANGE_AUTH = 'CHANGE_AUTH';
 // User Actions
 export const ADD_USER = 'ADD_USER';
 export const CHECK_AUTHENTICATION = 'CHECK_AUTHENTICATION';
+
+// Friend Actions
+export const ADD_FRIEND = 'ADD_FRIEND';

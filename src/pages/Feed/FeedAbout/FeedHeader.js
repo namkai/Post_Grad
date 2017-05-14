@@ -1,9 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import headshot from '../../../style/assets/headshot-namkai.jpg';
+import headshot from '../../../../style/assets/headshot-namkai.jpg';
 
-const FeedHeader = ({ user }) => (
+const FeedHeader = ({ user, friends, projects }) => (
 	<div className="card card-profile mb-4">
 		<div className="card-header" style={ { backgroundImage: `url(${ user.backgroundPhoto })` } }/>
 		<div className="card-block text-center">
@@ -24,14 +23,14 @@ const FeedHeader = ({ user }) => (
 				<li className="card-menu-item">
 					<a href="#userModal" className="text-inherit" data-toggle="modal">
 						Friends
-						<h6 className="my-0">{user.friends}</h6>
+						<h6 className="my-0">{friends}</h6>
 					</a>
 				</li>
 
 				<li className="card-menu-item">
-					<a href="#userModal" className="text-inherit" data-toggle="modal">
+					<a href="#projectsModal" className="text-inherit" data-toggle="modal">
 						Projects
-						<h6 className="my-0">100</h6>
+						<h6 className="my-0">{projects}</h6>
 					</a>
 				</li>
 			</ul>
@@ -39,4 +38,4 @@ const FeedHeader = ({ user }) => (
 	</div>
 );
 
-export default connect(({ user }) => ({ user }))(FeedHeader);
+export default FeedHeader;

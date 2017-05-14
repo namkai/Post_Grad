@@ -64,7 +64,7 @@ class Room extends Component {
 						<CodeResult code={this.state.code}/>
 					</div>
 					<div className="col-md-6">
-						<h1>test</h1>
+						<h1>Test</h1>
 					</div>
 				</div>
 			</div>

@@ -13,7 +13,6 @@ const ProfileHeader = ({ user }) => (
 				</p>
 			</div>
 		</div>
-
 		<nav className="profile-header-nav">
 			<ul className="nav nav-tabs justify-content-center">
 				<li className="nav-item active">
