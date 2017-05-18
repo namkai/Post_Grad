@@ -19,7 +19,7 @@ class SubmitPost extends Component {
 					<input type="text" className="form-control" placeholder="Message" onChange={this.updateQuery} value={this.state.query} />
 					<div className="input-group-btn">
 						<button type="button" className="btn btn-secondary">
-							<span className="icon icon-camera"/>
+							<span className="icon icon-add-to-list"/>
 						</button>
 					</div>
 				</div>

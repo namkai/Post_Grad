@@ -2,10 +2,10 @@ import React from 'react';
 import Post from './Post';
 
 const PostList = ({ posts }) => {
-//	const renderPosts = posts.map(post => <Post { ...post } />);
+	const renderPosts = posts.map(post => <Post { ...post } />);
 	return (
 		<div>
-			<Post />
+			{renderPosts}
 		</div>
 	);
 };

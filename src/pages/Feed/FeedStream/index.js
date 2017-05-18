@@ -1,18 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import SubmitPost from './SubmitPost';
+import projectsSelector from '../../../selectors/selected_projects';
 import PostList from './PostList';
+import SubmitPost from './SubmitPost';
 
-const FeedStream = (props) => {
+const FeedStream = ({ projects }) => {
 	return (
 		<div className="col-lg-6">
 			<ul className="list-group media-list media-list-stream mb-4">
 				<SubmitPost />
-				<PostList />
+				<PostList posts={ projects } />
 			</ul>
 		</div>
 	);
 };
 
+const mapStateToProps = (state) => {
+	return {
+		projects: projectsSelector(state),
+	};
+};
 
-export default connect()(FeedStream);
+export default connect(mapStateToProps)(FeedStream);
