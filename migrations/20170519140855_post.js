@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
         table.integer('user_id').unsigned().notNullable();
         table.foreign('user_id').references('user_id').inTable('users').onDelete('cascade');
         table.string('title').notNullable().defaultTo('');
-        table.text('text_body').notNullable().defaultTo('');
+        table.text('post_body').notNullable().defaultTo('');
         table.string('url_link').notNullable().defaultTo('');
         table.text('image').notNullable().defaultTo('');
         table.timestamp('created_at').notNullable().defaultTo(knex.fn.now());
