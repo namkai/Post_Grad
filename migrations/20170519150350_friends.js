@@ -1,13 +1,11 @@
 'use strict';
 exports.up = function(knex, Promise) {
-    return knex.schema.createTable('direct_messages', function(table) {
-        table.increments('direct_messages_id').primary();
+    return knex.schema.createTable('friends', function(table) {
+        table.increments('friend_id').primary();
         table.integer('user_id').unsigned().notNullable();
         table.foreign('user_id').references('user_id').inTable('users').onDelete('cascade');
         table.integer('friend_user_id').unsigned().notNullable();
         table.foreign('friend_user_id').references('user_id').inTable('users').onDelete('cascade');
-        table.string('combined_user_id').notNullable().unique();
-        table.text('message_body').notNullable('').defaultTo('');
         table.timestamp('created_at').notNullable().defaultTo(knex.fn.now());
         table.timestamp('updated_at').notNullable().defaultTo(knex.fn.now());
     });
@@ -15,6 +13,6 @@ exports.up = function(knex, Promise) {
 
 exports.down = function(knex, Promise) {
     return Promise.all([
-        knex.schema.dropTable('direct_messages')
+        knex.schema.dropTable('friends')
     ]);
 };

@@ -1,7 +1,7 @@
 'use strict';
 exports.up = function(knex, Promise) {
     return knex.schema.createTable('contributors', function(table) {
-        table.increments('portfolio_id').primary();
+        table.increments('contributors_id').primary();
         table.integer('contributors_user_id').unsigned().notNullable();
         table.foreign('contributors_user_id').references('user_id').inTable('users').onDelete('cascade');
         table.integer('project_id').unsigned().notNullable();
@@ -13,6 +13,6 @@ exports.up = function(knex, Promise) {
 
 exports.down = function(knex, Promise) {
     return Promise.all([
-        knex.schema.dropTable('portfolio')
+        knex.schema.dropTable('contributors')
     ]);
 };
