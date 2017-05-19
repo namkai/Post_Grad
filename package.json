@@ -8,6 +8,8 @@
     "eslint-plugin-node": "^4.2.2",
     "express": "^4.15.2",
     "jquery": "^3.2.1",
+    "knex": "^0.13.0",
+    "pg": "^6.2.2",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-codemirror": "^0.3.0",
@@ -18,7 +20,8 @@
     "redux": "^3.6.0",
     "redux-saga": "^0.15.3",
     "reselect": "^3.0.1",
-    "socket.io": "^2.0.1"
+    "socket.io": "^2.0.1",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
