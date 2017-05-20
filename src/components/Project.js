@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project = ({ name, repo, website, description, technologies, image }) => {
+const Project = ({ name, repo, website, description, technologies, photo }) => {
 	return (
 		<div className="card card-profile">
 			<div className="card-header" >
@@ -12,7 +12,7 @@ const Project = ({ name, repo, website, description, technologies, image }) => {
 				<a href="/profile/projects">
 					<img
 						className="card-profile-img"
-						src={ image }
+						src={ photo }
 					/>
 				</a>
 				<p className="mb-4">{description}</p>

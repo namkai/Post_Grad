@@ -7,7 +7,7 @@ const Profile = () => (
 		<div className="container pt-4">
 			<div className="row">
 				<FeedAbout />
-				<FeedStream/>
+				<FeedStream />
 			</div>
 		</div>
 	</div>

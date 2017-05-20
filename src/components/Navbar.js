@@ -15,7 +15,7 @@ const Navbar = ({ authenticate, authenticated }) => {
 			};
 			return (
 				<button className="btn btn-default navbar-btn navbar-btn-avatar" data-toggle="popover">
-					<img className="rounded-circle" src={ headshot } onClick={ () => logOut() }/>
+					<img className="rounded-circle" src={ headshot } />
 				</button>
 			);
 		}

@@ -7,8 +7,8 @@ import '../style/v4/dist/toolkit.js';
 import '../style/v4/docs/assets/js/tether.min.js'
 import '../style/v4/docs/assets/js/application.js'
 import "../style/v4/docs/assets/js/chart.js"
-import About from './components/About';
 
+import About from './components/About';
 import App from './components/App';
 import requireAuth from './components/HOC/Require_Authentication';
 import LoginForm from './components/LoginForm';

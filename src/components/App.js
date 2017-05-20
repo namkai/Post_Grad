@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import { connect } from 'react-redux';
 import * as actions from '../actions/user_actions';
+import Messages from '../pages/Messages';
 
 class App extends Component {
 	componentWillMount() {
@@ -26,6 +27,7 @@ class App extends Component {
 		return (
 			<div className="with-top-navbar">
 				<Navbar />
+				<Messages />
 			</div>
 		);
 	}
