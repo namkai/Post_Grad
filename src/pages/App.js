@@ -1,12 +1,12 @@
 import firebase from 'firebase';
 import 'firebase/auth';
 import React, { Component } from 'react';
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 import { connect } from 'react-redux';
 import * as actions from '../actions/user_actions';
-import Messages from '../pages/Messages';
+import Messages from './Messages/index';
 
-class App extends Component {
+export class App extends Component {
 	componentWillMount() {
 		firebase.initializeApp({
 			apiKey: 'AIzaSyCs6JKsjx0pMAAXLU4fFHNlkTdnqfHpjdw',

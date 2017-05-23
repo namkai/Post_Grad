@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import headshot from '../../../../style/assets/headshot-namkai.jpg';
 
-const FeedHeader = ({ user, friends, projects }) => (
+export const FeedHeader = ({ user, friends, projects }) => (
 	<div className="card card-profile mb-4">
 		<div className="card-header" style={ { backgroundImage: `url(${ user.backgroundPhoto })` } }/>
 		<div className="card-block text-center">
@@ -26,7 +26,6 @@ const FeedHeader = ({ user, friends, projects }) => (
 						<h6 className="my-0">{friends}</h6>
 					</a>
 				</li>
-
 				<li className="card-menu-item">
 					<a href="#projectsModal" className="text-inherit" data-toggle="modal">
 						Projects
@@ -39,3 +38,4 @@ const FeedHeader = ({ user, friends, projects }) => (
 );
 
 export default FeedHeader;
+

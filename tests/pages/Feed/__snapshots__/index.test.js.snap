@@ -1,0 +1,12 @@
+exports[`Profile Renders a profile 1`] = `
+<div>
+  <div
+    className="container pt-4">
+    <div
+      className="row">
+      <Connect(ProfileAbout) />
+      <Connect(FeedStream) />
+    </div>
+  </div>
+</div>
+`;

@@ -9,7 +9,7 @@ import '../style/v4/docs/assets/js/application.js'
 import "../style/v4/docs/assets/js/chart.js"
 
 import About from './components/About';
-import App from './components/App';
+import App from './pages/App';
 import requireAuth from './components/HOC/Require_Authentication';
 import LoginForm from './components/LoginForm';
 import ProjectList from './components/ProjectList';
