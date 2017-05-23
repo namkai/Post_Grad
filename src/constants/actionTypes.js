@@ -12,5 +12,5 @@ export const CHECK_AUTHENTICATION = 'CHECK_AUTHENTICATION';
 // Friend Actions
 export const ADD_FRIEND = 'ADD_FRIEND';
 
-//Messages
+//Conversations
 export const ADD_MESSAGE = 'ADD_MESSAGE';

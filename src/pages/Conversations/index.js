@@ -1,145 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import ConversationList from './ConversationList';
 
-
-const Messages = ({ messages }) => (
+const Conversations = ({ conversations }) => (
 	<div className="modal fade" id="msgModal" tabIndex="-1" role="dialog" aria-labelledby="msgModal" aria-hidden="true">
 		<div className="modal-dialog">
 			<div className="modal-content">
 				<div className="modal-header">
-					<h5 className="modal-title">Messages</h5>
+					<h5 className="modal-title">Conversations</h5>
 					<button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 
 				<div className="modal-body p-0 js-modalBody">
 					<div className="modal-body-scroller">
 						<div className="media-list media-list-users list-group js-msgGroup">
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-fat.jpg"
-									/>
-									<div className="media-body">
-										<strong>Jacob Thornton</strong> and <strong>1 other</strong>
-										<div className="media-body-secondary">
-											Aenean eu leo quam. Pellentesque ornare sem lacinia quam &hellip;
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-mdo.png"
-									/>
-									<div className="media-body">
-										<strong>Mark Otto</strong> and <strong>3 others</strong>
-										<div className="media-body-secondary">
-											Brunch sustainable placeat vegan bicycle rights yeah…
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-dhg.png"
-									/>
-									<div className="media-body">
-										<strong>Dave Gamache</strong>
-										<div className="media-body-secondary">
-											Brunch sustainable placeat vegan bicycle rights yeah…
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-fat.jpg"
-									/>
-									<div className="media-body">
-										<strong>Jacob Thornton</strong> and <strong>1 other</strong>
-										<div className="media-body-secondary">
-											Aenean eu leo quam. Pellentesque ornare sem lacinia quam &hellip;
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-mdo.png"
-									/>
-									<div className="media-body">
-										<strong>Mark Otto</strong> and <strong>3 others</strong>
-										<div className="media-body-secondary">
-											Brunch sustainable placeat vegan bicycle rights yeah…
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-dhg.png"
-									/>
-									<div className="media-body">
-										<strong>Dave Gamache</strong>
-										<div className="media-body-secondary">
-											Brunch sustainable placeat vegan bicycle rights yeah…
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-fat.jpg"
-									/>
-									<div className="media-body">
-										<strong>Jacob Thornton</strong> and <strong>1 other</strong>
-										<div className="media-body-secondary">
-											Aenean eu leo quam. Pellentesque ornare sem lacinia quam &hellip;
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-mdo.png"
-									/>
-									<div className="media-body">
-										<strong>Mark Otto</strong> and <strong>3 others</strong>
-										<div className="media-body-secondary">
-											Brunch sustainable placeat vegan bicycle rights yeah…
-										</div>
-									</div>
-								</div>
-							</a>
-							<a href="#" className="list-group-item list-group-item-action">
-								<div className="media">
-									<img
-										className="rounded-circle media-object d-flex align-self-start mr-3"
-										src="assets/img/avatar-dhg.png"
-									/>
-									<div className="media-body">
-										<strong>Dave Gamache</strong>
-										<div className="media-body-secondary">
-											Brunch sustainable placeat vegan bicycle rights yeah…
-										</div>
-									</div>
-								</div>
-							</a>
+							<ConversationList conversations={ conversations } />
 						</div>
 
 						<div className="hidden-xs-up m-3 js-conversation">
@@ -302,4 +177,4 @@ const Messages = ({ messages }) => (
 	</div>
 );
 
-export default connect(({ messages }) => ({ messages }))(Messages);
+export default connect(({ conversations }) => ({ conversations }))(Conversations);

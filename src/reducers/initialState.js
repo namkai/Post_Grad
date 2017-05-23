@@ -25,7 +25,24 @@ export default {
 			},
 		],
 	},
-	messages: [],
+	conversations: [
+		{
+			name: 'Trevor Pellegrini',
+			timestamp: new Date(),
+			messages: [
+				{
+					name: 'Trevor',
+					text: `Hey Namkai, how's it going?`,
+					timestamp: new Date(),
+				},
+				{
+					name: 'Namkai',
+					text: 'Hey Trevor',
+					timestamp: new Date(),
+				},
+			],
+		},
+	],
 	newUser: {},
 	friends: [
 		{

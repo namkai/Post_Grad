@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar';
 import { connect } from 'react-redux';
 import * as actions from '../actions/user_actions';
-import Messages from './Messages/index';
+import Messages from './Conversations/index';
 
 export class App extends Component {
 	componentWillMount() {

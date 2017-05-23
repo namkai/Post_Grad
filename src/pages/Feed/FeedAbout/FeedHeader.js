@@ -38,4 +38,3 @@ export const FeedHeader = ({ user, friends, projects }) => (
 );
 
 export default FeedHeader;
-

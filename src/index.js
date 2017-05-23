@@ -15,7 +15,7 @@ import LoginForm from './components/LoginForm';
 import ProjectList from './components/ProjectList';
 import Room from './pages/CodeRoom';
 import Feed from './pages/Feed/index';
-import Profile from './pages/Profile/Profile';
+import Profile from './pages/Profile/index';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
