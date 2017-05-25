@@ -14,3 +14,4 @@ export const ADD_FRIEND = 'ADD_FRIEND';
 
 //Conversations
 export const ADD_MESSAGE = 'ADD_MESSAGE';
+export const SELECTED_MESSAGE = 'SELECTED_MESSAGE';

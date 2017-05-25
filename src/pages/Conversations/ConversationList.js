@@ -1,12 +1,11 @@
 import React from 'react';
 import Conversation from './Conversation';
 
-const ConversationList = ({ conversations }) => {
-	console.log(conversations, `i'm the conversations`)
-	const convos = conversations.map(convo => <Conversation { ...convo } />);
+const ConversationList = ({ conversations, selectedConversation }) => {
+	const conversationList = conversations.map(convo => <Conversation { ...convo } selectedConversation={ selectedConversation } />);
 	return (
 		<div>
-			{convos}
+			{conversationList}
 		</div>
 	);
 };

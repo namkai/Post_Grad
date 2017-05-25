@@ -1,4 +1,4 @@
-import * as type from '../constants/actionTypes';
+import * as type from '../Constants/actionTypes';
 import initialState from './initialState';
 
 export default function (state = initialState.conversations, action) {

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Conversation = ({ name, messages }) => (
-	<a href="#" className="list-group-item list-group-item-action">
+const Conversation = ({ name, messages, selectedConversation }) => (
+	<a href="#" className="list-group-item list-group-item-action" onClick={ () => selectedConversation(messages) }>
 		<div className="media">
 			<img
 				className="rounded-circle media-object d-flex align-self-start mr-3"

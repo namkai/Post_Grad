@@ -8,15 +8,15 @@ import '../style/v4/docs/assets/js/tether.min.js'
 import '../style/v4/docs/assets/js/application.js'
 import "../style/v4/docs/assets/js/chart.js"
 
-import About from './components/About';
-import App from './pages/App';
-import requireAuth from './components/HOC/Require_Authentication';
-import LoginForm from './components/LoginForm';
-import ProjectList from './components/ProjectList';
-import Room from './pages/CodeRoom';
-import Feed from './pages/Feed/index';
-import Profile from './pages/Profile/index';
-import configureStore from './store/configureStore';
+import About from './Components/About';
+import App from './Pages/App';
+import requireAuth from './Components/HOC/Require_Authentication';
+import LoginForm from './Components/LoginForm';
+import ProjectList from './Components/ProjectList';
+import Room from './Pages/CodeRoom';
+import Feed from './Pages/Feed/index';
+import Profile from './Pages/Profile/index';
+import configureStore from './Store/configureStore';
 
 const store = configureStore();
 

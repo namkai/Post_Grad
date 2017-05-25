@@ -5,4 +5,3 @@ import watchResponseData from './watcher';
 export default function* rootSaga() {
 	yield fork(watchResponseData);
 }
-

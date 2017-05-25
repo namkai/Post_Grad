@@ -1,9 +1,9 @@
 import firebase from 'firebase';
 import 'firebase/auth';
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../Components/Navbar';
 import { connect } from 'react-redux';
-import * as actions from '../actions/user_actions';
+import * as actions from '../Actions/UserActions';
 import Messages from './Conversations/index';
 
 export class App extends Component {

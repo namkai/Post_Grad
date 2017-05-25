@@ -2,7 +2,7 @@ import firebase from 'firebase';
 import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import * as auth from '../actions/authentication_actions';
+import * as auth from '../Actions/AuthenticationActions';
 import headshot from '../../style/assets/headshot-namkai.jpg';
 import logo from '../../style/v4/docs/assets/img/brand-white.png';
 

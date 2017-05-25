@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { call, put } from 'redux-saga/effects';
-import * as types from '../constants/actionTypes';
+import * as types from '../Constants/actionTypes';
 
 export function* getPostsData({ payload }) {
 	try {

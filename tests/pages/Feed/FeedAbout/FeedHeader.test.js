@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { FeedHeader } from '../../../../src/pages/Feed/FeedAbout/FeedHeader';
+import { FeedHeader } from '../../../../src/Pages/Feed/FeedAbout/FeedHeader';
 
 describe('FeedHeader', () => {
 	it('Renders a feedHeader component', () => {

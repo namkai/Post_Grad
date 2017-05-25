@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import projectsSelector from '../../../selectors/selected_projects';
+import projectsSelector from '../../../Selectors/SelectedProjects';
 import PostList from './PostList';
 import SubmitPost from './SubmitPost';
 

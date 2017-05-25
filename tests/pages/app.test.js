@@ -1,5 +1,5 @@
 import React from 'react';
-import { App } from '../../src/pages/App';
+import { App } from '../../src/Pages/App';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 

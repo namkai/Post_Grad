@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux';
-import authenticated from './authentication_reducer';
-import newUser from './newuser_reducer';
-import projects from './projects_reducer';
-import user from './user_reducer';
-import friends from './friends_reducer';
-import conversations from './conversations_reducer';
+import authenticated from './AuthenticationReducer';
+import newUser from './NewUserReducer';
+import projects from './ProjectsReducer';
+import user from './UserReducer';
+import friends from './FriendsReducer';
+import conversations from './ConversationsReducer';
+import messages from './MessagesReducer';
 
 const rootReducer = combineReducers({
 	user,
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
 	projects,
 	friends,
 	conversations,
+	messages,
 });
 
 export default rootReducer;

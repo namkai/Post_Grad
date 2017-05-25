@@ -1,7 +1,7 @@
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/mode/javascript/javascript.js';
 import 'codemirror/theme/monokai.css';
-// src/components/Room.js
+// src/Components/Room.js
 import React, { Component } from 'react';
 import Codemirror from 'react-codemirror';
 import io from 'socket.io-client';

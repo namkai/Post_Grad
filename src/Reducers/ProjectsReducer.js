@@ -1,4 +1,4 @@
-import * as type from '../constants/actionTypes';
+import * as type from '../Constants/actionTypes';
 import projectState from './projectState';
 
 export default function (state = projectState, action) {

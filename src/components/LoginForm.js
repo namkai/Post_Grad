@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import logo from '../../style/v4/docs/assets/img/brand.png';
-import * as auth from '../actions/authentication_actions';
+import * as auth from '../Actions/AuthenticationActions';
 import GoogleAuth from './GoogleAuth';
 import GithubAuth from './GithubAuth';
 
