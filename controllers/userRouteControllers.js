@@ -24,6 +24,15 @@ exports.getProjects = (req,res) =>{
     });
 };
 
+exports.getFriends = (req,res) => {
+    knex('friends')
+    .innerJoin('users', 'users.user_id','friends.user_id')
+    .where('friends.friend_user_id', req.params.id)
+    .then(data => {
+        res.json(data);
+    });
+};
+
 // export.getPost = (req,res) => {
 //     knex()
 // }
