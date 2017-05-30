@@ -11,7 +11,7 @@ app.get('/', function(req,res){
 });
 
 app.use('/users', users);
-app.use('/post', post);
+app.use('/posts', post);
 app.use('/messages', messages);
 
 app.listen(PORT, function(){
