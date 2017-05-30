@@ -19,7 +19,7 @@ exports.seed = function(knex, Promise) {
             }, {
                 user_id: 2,
                 post_id: 1,
-                comment_body:'something something something something something something something something something something something something'
+                comment_body:'user ud 2 something something something something something something something something something something something something'
             }, {
                 user_id: 2,
                 post_id: 2,
@@ -31,7 +31,7 @@ exports.seed = function(knex, Promise) {
             }, {
                 user_id: 3,
                 post_id: 1,
-                comment_body:'something something something something something something something something something something something something'
+                comment_body:'user id 3 something something something something something something something something something something something something'
             }, {
                 user_id: 3,
                 post_id: 2,
