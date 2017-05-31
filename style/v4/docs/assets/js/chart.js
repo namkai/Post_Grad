@@ -1765,7 +1765,7 @@
        * We assume the radius of the polygon is half the size of the canvas at first
        * at each index we check if the text overlaps.
        *
-       * Where it does, we store that angle and that index.
+       * Where it does, we Store that angle and that index.
        *
        * After finding the largest index and angle we calculate how much we need to remove
        * from the shape radius to move the point inwards by that x.

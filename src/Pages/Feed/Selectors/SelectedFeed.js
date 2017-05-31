@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 
-// Grabs staff piece of state from store
+// Grabs staff piece of state from Store
 const projectsSelector = state => state.projects;
 
-// Grabs tag piece of state from store
+// Grabs tag piece of state from Store
 const postSelector = state => state.friends;
 
 // Filters the selected staff based on their associated tag
