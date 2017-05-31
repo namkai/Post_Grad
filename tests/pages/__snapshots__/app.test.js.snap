@@ -1,0 +1,7 @@
+exports[`App Renders a app 1`] = `
+<div
+  className="with-top-navbar">
+  <Connect(Navbar) />
+  <Connect(Messages) />
+</div>
+`;

@@ -1,4 +1,4 @@
-## index.js.js header
+## rootReducer.js.js header
 
 Simple profile headers to show off a user's profile information
 
