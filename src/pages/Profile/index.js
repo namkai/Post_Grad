@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileHeader from './ProfileHeader';
+import ProfileHeader from './Components/ProfileHeader';
 
 const Profile = props => (
 	<div>

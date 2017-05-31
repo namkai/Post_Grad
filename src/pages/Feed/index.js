@@ -1,6 +1,6 @@
 import React from 'react';
-import FeedAbout from './FeedAbout/';
-import FeedStream from './FeedStream'
+import FeedAbout from './Components/FeedAbout/index';
+import FeedStream from './Components/FeedStream/index'
 
 export const Profile = () => (
 	<div>

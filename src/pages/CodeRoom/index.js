@@ -5,7 +5,7 @@ import 'codemirror/theme/monokai.css';
 import React, { Component } from 'react';
 import Codemirror from 'react-codemirror';
 import io from 'socket.io-client';
-import CodeResult from './CodeResult';
+import CodeResult from './Components/CodeResult';
 const socket = io();
 import '../../../style/CodeRoom.css'
 
