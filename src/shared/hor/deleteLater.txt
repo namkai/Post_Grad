@@ -1,0 +1,75 @@
+
+user
+    projects
+    friends
+
+
+GET /users/123
+
+{
+    id: 123,
+    prop1:
+    prop2:
+    projects: [
+        {
+            id: 999,
+
+        },
+        {
+            id: 999
+        }
+    ]
+}
+
+{
+    id: 123,
+    prop1:
+    prop2:
+    hasProjects: true|false,  SELECT COUNT(1) FROM Prohect WHERE userId = 123;
+    hasMessages: true|false
+}
+
+
+{
+    id: 123,
+    prop1:
+    prop2:
+    projects: []
+}
+
+{
+    id: 123,
+    posts: [],
+    messages: [],
+    projects: [],
+    friends: [],
+
+}
+
+
+
+function getUserV1(id) {
+    return fetch('/users/123');
+}
+
+function getUserV2(id) {
+   const u;
+   return fetch('/users/123')
+   .then(user => {
+      Object.assign(u, user);
+      return fetch('/users/123/projects');
+   })
+   .then(projects => {
+      Object.assign(u, { projects });
+      return fetch('/users/123/friends');
+   })
+   .then(friends => {
+       Object.assign(u, { friends });
+       return u;
+   });
+}
+
+getUser(123).then(user => {
+    console.log(user.projects);
+    console.log(user.friends);
+});

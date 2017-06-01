@@ -25,6 +25,7 @@ export class App extends Component {
 	}
 
 	render() {
+		console.log(this.props.userEntity, `i'm the user entity`)
 		return (
 			<div className="with-top-navbar">
 				<Navbar />
@@ -34,4 +35,4 @@ export class App extends Component {
 	}
 }
 
-export default connect(null, authenticate)(App);
+export default connect(({ userEntity }) => ({ userEntity }), authenticate)(App);

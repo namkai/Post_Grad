@@ -2,7 +2,7 @@ import React from 'react';
 import FeedAbout from './Components/FeedAbout/index';
 import FeedStream from './Components/FeedStream/index'
 
-export const Profile = () => (
+export const Feed = () => (
 	<div>
 		<div className="container pt-4">
 			<div className="row">
@@ -13,4 +13,4 @@ export const Profile = () => (
 	</div>
 );
 
-export default Profile;
+export default Feed;
