@@ -6,7 +6,7 @@ import * as api from '../../entities/constants/api';
 
 const fetchUserEpic = action$ =>
 	action$.ofType(type.FETCH_USER)
-		.mergeMap(action => ajax(`/${api.USER}1`)
+		.mergeMap(action => ajax(`${api.USER}`)
 			.map(payload => ({ type: type.FETCH_USER_SUCCESS, payload }))
 			.takeUntil(action$.ofType(type.FETCH_USER_ABORTED))
 			.catch(error => Observable.of({ type: type.FETCH_USER_FAILED, error }))

@@ -25,7 +25,7 @@ class LoginForm extends Component {
 		firebase.auth().onAuthStateChanged(user => {
 			if (user) {
 				this.props.authenticate(true);
-				this.props.addUser(user.email);
+				this.props.fetchUser(user.email);
 				this.redirect();
 			}
 		});
