@@ -10,7 +10,7 @@ $body-bg: #f5f8fa;
 // Component borders
 // Create a custom variable to base the border-color off the body background.
 $toolkit-border-color:  darken(#f5f8fa, 10%);
-// Then apply that to key components
+// Then apply that to key Components
 $panel-default-border:  $toolkit-border-color;
 $panel-inner-border:    $toolkit-border-color;
 $panel-footer-bg:       $body-bg;
