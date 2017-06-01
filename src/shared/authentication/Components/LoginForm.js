@@ -2,10 +2,10 @@ import firebase from 'firebase';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import logo from '../../../../../style/v4/docs/assets/img/brand.png';
+import logo from '../../../../style/v4/docs/assets/img/brand.png';
 import * as auth from '../Actions';
-import GoogleAuth from './GoogleAuth';
 import GithubAuth from './GithubAuth';
+import GoogleAuth from './GoogleAuth';
 
 class LoginForm extends Component {
 	constructor(props) {
@@ -16,17 +16,21 @@ class LoginForm extends Component {
 			error: '',
 		};
 	}
+
 	static contextTypes = {
 		router: React.PropTypes.object,
 	};
+
 	componentWillMount() {
 		firebase.auth().onAuthStateChanged(user => {
-			if(user){
+			if (user) {
 				this.props.authenticate(true);
+				this.props.addUser(user.email);
 				this.redirect();
 			}
-		})
+		});
 	}
+
 	onButtonPress = (event) => {
 		event.preventDefault();
 		const { email, password } = this.state;
@@ -42,7 +46,7 @@ class LoginForm extends Component {
 			console.log('i\'m the error', error);
 			firebase.auth().createUserWithEmailAndPassword(email, password).catch((NewError) => {
 				console.log('I\'m the error to create a user', NewError);
-				this.setState({ error: 'Authentication Failed.' });
+				this.setState({ error: 'authentication Failed.' });
 			});
 		}
 	};
@@ -86,10 +90,10 @@ class LoginForm extends Component {
 							/>
 						</div>
 						<div className="form-group mb-3">
-							<GoogleAuth redirect={this.redirect} />
+							<GoogleAuth redirect={this.redirect}/>
 						</div>
 						<div className="form-group mb-3">
-							<GithubAuth redirect={this.redirect} />
+							<GithubAuth redirect={this.redirect}/>
 						</div>
 
 						<div className="mb-5">

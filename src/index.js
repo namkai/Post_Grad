@@ -8,15 +8,15 @@ import '../style/v4/dist/toolkit.js';
 import '../style/v4/docs/assets/js/application.js';
 import '../style/v4/docs/assets/js/chart.js';
 import '../style/v4/docs/assets/js/tether.min.js';
+import App from './pages/App';
+import Room from './pages/CodeRoom';
+import Feed from './pages/Feed/index';
+import ProjectList from './pages/Profile/Components/ProjectList';
+import Profile from './pages/Profile/index';
+import LoginForm from './shared/authentication/Components/LoginForm';
 
-import requireAuth from './Shared/HOC/Require_Authentication';
-import LoginForm from './Shared/Components/Authentication/Components/LoginForm';
-import ProjectList from './Pages/Profile/Components/ProjectList';
-import App from './Pages/App';
-import Room from './Pages/CodeRoom';
-import Feed from './Pages/Feed/index';
-import Profile from './Pages/Profile/index';
-import configureStore from './Store/configureStore';
+import requireAuth from './shared/components/hoc/Require_Authentication';
+import configureStore from './store/configureStore';
 
 const store = configureStore();
 

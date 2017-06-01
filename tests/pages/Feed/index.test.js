@@ -1,5 +1,5 @@
 import React from 'react';
-import { Profile } from '../../../src/Pages/Feed';
+import { Profile } from '../../../src/pages/Feed';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 

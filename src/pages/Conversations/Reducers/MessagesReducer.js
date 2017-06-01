@@ -1,5 +1,5 @@
 import * as type from '../Constants/actionTypes';
-import initialState from '../../../Shared/initialState/initialState';
+import initialState from '../../../shared/initialState/initialState';
 
 
 export default function (state = initialState.conversations[0].messages, action) {

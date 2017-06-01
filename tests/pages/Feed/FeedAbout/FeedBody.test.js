@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import React from 'react';
-import { FeedBody } from '../../../../src/Pages/Feed/Components/FeedAbout/FeedBody';
+import { FeedBody } from '../../../../src/pages/Feed/Components/FeedAbout/FeedBody';
 
 describe('FeedBody', () => {
 	it('Renders a feedBody component', () => {

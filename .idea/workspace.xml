@@ -2,7 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acd613bd-09d9-4d3e-bf17-387a232233c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/shared/entities/constants/api.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/App.js" afterPath="$PROJECT_DIR$/src/pages/App.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/CodeRoom/Components/CodeResult.js" afterPath="$PROJECT_DIR$/src/pages/CodeRoom/Components/CodeResult.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/CodeRoom/index.js" afterPath="$PROJECT_DIR$/src/pages/CodeRoom/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Actions/index.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Actions/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/Conversation.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/Conversation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/ConversationList.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/ConversationList.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/Message.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/Message.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/MessageList.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/MessageList.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/Messages.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/Messages.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Constants/actionTypes.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Constants/actionTypes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Reducers/ConversationsReducer.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Reducers/ConversationsReducer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Reducers/MessagesReducer.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Reducers/MessagesReducer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/index.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/FeedBody.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/FeedBody.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/FeedHeader.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/FeedHeader.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/FeedPhotos.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/FeedPhotos.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/ListItem.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/ListItem.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/ListModal.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/ListModal.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/Photo.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/Photo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/index.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/Post.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/Post.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/PostList.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/PostList.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/SubmitPost.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/SubmitPost.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/index.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Selectors/SelectedFeed.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Selectors/SelectedFeed.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Selectors/SelectedProjects.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Selectors/SelectedProjects.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/index.js" afterPath="$PROJECT_DIR$/src/pages/Feed/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/Components/ProfileHeader.js" afterPath="$PROJECT_DIR$/src/pages/Profile/Components/ProfileHeader.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/Components/Project.js" afterPath="$PROJECT_DIR$/src/pages/Profile/Components/Project.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/Components/ProjectList.js" afterPath="$PROJECT_DIR$/src/pages/Profile/Components/ProjectList.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/index.js" afterPath="$PROJECT_DIR$/src/pages/Profile/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Roots/rootEpic.js" afterPath="$PROJECT_DIR$/src/roots/rootEpic.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Roots/rootReducer.js" afterPath="$PROJECT_DIR$/src/roots/rootReducer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Constants/actionTypes.js" afterPath="$PROJECT_DIR$/src/shared/entities/constants/actionTypes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/FriendsReducer.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/FriendsReducer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/ProjectsReducer.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/ProjectsReducer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/UserReducer.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/index.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Actions.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Actions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Components/GithubAuth.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Components/GithubAuth.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Components/GoogleAuth.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Components/GoogleAuth.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Components/LoginForm.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Components/LoginForm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Reducer.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Reducer.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/actionTypes.js" afterPath="$PROJECT_DIR$/src/shared/authentication/actionTypes.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Navbar.js" afterPath="$PROJECT_DIR$/src/shared/components/Navbar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/HOC/Require_Authentication.js" afterPath="$PROJECT_DIR$/src/shared/components/hoc/Require_Authentication.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/initialState/initialState.js" afterPath="$PROJECT_DIR$/src/shared/initialState/initialState.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/initialState/projectState.js" afterPath="$PROJECT_DIR$/src/shared/initialState/projectState.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="$PROJECT_DIR$/.eslintrc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/ausers.js" afterPath="$PROJECT_DIR$/seeds/ausers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/bportfolio.js" afterPath="$PROJECT_DIR$/seeds/bportfolio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/cprojects.js" afterPath="$PROJECT_DIR$/seeds/cprojects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/dcontributors.js" afterPath="$PROJECT_DIR$/seeds/dcontributors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/epost.js" afterPath="$PROJECT_DIR$/seeds/epost.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/flikes.js" afterPath="$PROJECT_DIR$/seeds/flikes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/gcomments.js" afterPath="$PROJECT_DIR$/seeds/gcomments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/hdirect_messages.js" afterPath="$PROJECT_DIR$/seeds/hdirect_messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/ifriends.js" afterPath="$PROJECT_DIR$/seeds/ifriends.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Store/configureStore.js" afterPath="$PROJECT_DIR$/src/Store/configureStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/dist/toolkit.js" afterPath="$PROJECT_DIR$/style/v4/dist/toolkit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/docs/assets/js/toolkit.js" afterPath="$PROJECT_DIR$/style/v4/docs/assets/js/toolkit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/button.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/carousel.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/collapse.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/dropdown.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/modal.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/style/v4/scss/bootstrap/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/style/v4/scss/bootstrap/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/style/v4/scss/bootstrap/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/components.scss" afterPath="$PROJECT_DIR$/style/v4/scss/components.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/custom/docs.scss" afterPath="$PROJECT_DIR$/style/v4/scss/custom/docs.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/variables.scss" afterPath="$PROJECT_DIR$/style/v4/scss/variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedBody.test.js" afterPath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedBody.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedHeader.test.js" afterPath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedHeader.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/Feed/index.test.js" afterPath="$PROJECT_DIR$/tests/pages/Feed/index.test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/app.test.js" afterPath="$PROJECT_DIR$/tests/pages/app.test.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,43 +99,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Messages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Components/Messages.js">
+      <file leaf-file-name="Actions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/authentication/Actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Components/Message.js">
+      <file leaf-file-name="LoginForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/authentication/Components/LoginForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Pages/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="576">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -64,63 +121,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+      <file leaf-file-name="Reducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/authentication/Reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actionTypes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/authentication/actionTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rootEpic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/roots/rootEpic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="fetchUserEpic.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIserver.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APIserver.js">
+      <file leaf-file-name="UserReducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actionTypes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/entities/constants/actionTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/entities/constants/api.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="knex.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/knex.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".eslintrc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.eslintrc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+              <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -158,30 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Store/configureStore.js" />
-        <option value="$PROJECT_DIR$/src/Roots/rootEpic.js" />
-        <option value="$PROJECT_DIR$/src/Features/Conversations/Reducers/MessagesReducer.js" />
-        <option value="$PROJECT_DIR$/src/Features/Conversations/Actions/ConversationActions.js" />
-        <option value="$PROJECT_DIR$/src/Features/App.js" />
-        <option value="$PROJECT_DIR$/src/Actions/AuthenticationActions.js" />
-        <option value="$PROJECT_DIR$/src/Features/Authentication/Components/LoginForm.js" />
-        <option value="$PROJECT_DIR$/src/Shared/Components/Navbar.js" />
-        <option value="$PROJECT_DIR$/src/Features/Authentication/Actions/index.js" />
-        <option value="$PROJECT_DIR$/src/Features/Authentication/Reducers/AuthenticationReducer.js" />
-        <option value="$PROJECT_DIR$/src/Shared/User/Actions/UserActions.js" />
-        <option value="$PROJECT_DIR$/src/Shared/User/Reducers/UserReducer.js" />
-        <option value="$PROJECT_DIR$/src/Features/Profile/Components/ProjectList.js" />
-        <option value="$PROJECT_DIR$/src/Shared/User/Reducers/FriendsReducer.js" />
-        <option value="$PROJECT_DIR$/src/Shared/User/Reducers/ProjectsReducer.js" />
-        <option value="$PROJECT_DIR$/src/Reducers/NewUserReducer.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Features/Conversations/Constants/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/Features/Conversations/Reducers/ConversationsReducer.js" />
-        <option value="$PROJECT_DIR$/src/Reducers/initialState.js" />
-        <option value="$PROJECT_DIR$/src/Data/Conversations/Reducers/ConversationsReducer.js" />
-        <option value="$PROJECT_DIR$/src/Data/Friends/Reducers/FriendsReducer.js" />
-        <option value="$PROJECT_DIR$/src/Data/Friends/FriendsReducer.js" />
-        <option value="$PROJECT_DIR$/src/Data/Conversations/index.js" />
         <option value="$PROJECT_DIR$/src/Data/Authentication/AuthenticationReducer.js" />
         <option value="$PROJECT_DIR$/src/Data/Authentication/Actions.js" />
         <option value="$PROJECT_DIR$/src/Data/Authentication/Reducer.js" />
@@ -209,6 +264,30 @@
         <option value="$PROJECT_DIR$/src/Pages/Conversations/index.js" />
         <option value="$PROJECT_DIR$/src/pages/Conversations/index.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/seeds/epost.js" />
+        <option value="$PROJECT_DIR$/seeds/ifriends.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/.eslintrc.js" />
+        <option value="$PROJECT_DIR$/src/pages/App.js" />
+        <option value="$PROJECT_DIR$/src/shared/entities/Reducers/FriendsReducer.js" />
+        <option value="$PROJECT_DIR$/src/shared/entities/Reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/shared/entities/Reducers/ProjectsReducer.js" />
+        <option value="$PROJECT_DIR$/seeds/flikes.js" />
+        <option value="$PROJECT_DIR$/seeds/dcontributors.js" />
+        <option value="$PROJECT_DIR$/seeds/cprojects.js" />
+        <option value="$PROJECT_DIR$/seeds/bportfolio.js" />
+        <option value="$PROJECT_DIR$/seeds/ausers.js" />
+        <option value="$PROJECT_DIR$/seeds/gcomments.js" />
+        <option value="$PROJECT_DIR$/seeds/hdirect_messages.js" />
+        <option value="$PROJECT_DIR$/src/shared/entities/constants/api.js" />
+        <option value="$PROJECT_DIR$/src/shared/entities/constants/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/shared/entities/epics/fetchUserEpic.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/Actions.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/Components/LoginForm.js" />
+        <option value="$PROJECT_DIR$/src/roots/rootEpic.js" />
+        <option value="$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js" />
       </list>
     </option>
   </component>
@@ -311,7 +390,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Shared" />
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,11 +408,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Shared" />
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HOC" />
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reducers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,11 +434,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Shared" />
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Components" />
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PostGrad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PostGrad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authentication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PostGrad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PostGrad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authentication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PostGrad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PostGrad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roots" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,18 +525,18 @@
     <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/shared/authentication/epics" />
+      <recent name="$PROJECT_DIR$/src/shared" />
+      <recent name="$PROJECT_DIR$/src/shared/components" />
+      <recent name="$PROJECT_DIR$/src/Shared/Components" />
+      <recent name="$PROJECT_DIR$/src/Shared" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/sagas" />
       <recent name="$PROJECT_DIR$/src/components/HOC" />
       <recent name="$PROJECT_DIR$/style/assets" />
       <recent name="$PROJECT_DIR$/src/lib/js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Shared/Components" />
-      <recent name="$PROJECT_DIR$/src/Shared" />
-      <recent name="$PROJECT_DIR$/src/Shared/initialState" />
-      <recent name="$PROJECT_DIR$/src/Shared/ApiCache/Reducers" />
-      <recent name="$PROJECT_DIR$/src/Pages/Conversations/Actions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -473,6 +622,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="acd613bd-09d9-4d3e-bf17-387a232233c1" name="Default" comment="" />
@@ -500,17 +652,18 @@
       <workItem from="1495834664291" duration="1280000" />
       <workItem from="1496006417224" duration="439000" />
       <workItem from="1496179773063" duration="7918000" />
-      <workItem from="1496256986415" duration="723000" />
+      <workItem from="1496256986415" duration="5816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172988000" />
+    <option name="totallyTimeSpent" value="178081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21368124" sideWeight="0.49637306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21368124" sideWeight="0.49637306" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -563,184 +716,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Pages/Profile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Components/Conversation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Components/ConversationList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Components/MessageList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Actions/ProductActions.js" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Authentication/Actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/About.js" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/HOC/Require_Authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Feed/Selectors/SelectedFeed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Feed/Selectors/SelectedProjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Profile/Components/ProfileHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Profile/Components/Project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Profile/Components/ProjectList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants/urlTypes.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/Friends/Actions.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/User/Constants/actionTypes.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/Friends/actionTypes.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/User/Actions/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/ApiCache/Reducers/UserReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Reducers/NewUserReducer.js" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/initialState/initialState.js">
+    <entry file="file://$PROJECT_DIR$/src/shared/initialState/initialState.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/initialState/projectState.js">
+    <entry file="file://$PROJECT_DIR$/src/shared/initialState/projectState.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Authentication/Components/LoginForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Authentication/Components/GithubAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Authentication/Components/GoogleAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Authentication/Actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Authentication/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Components/Authentication/Reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/ApiCache/Reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Constants/actionTypes.js" />
-    <entry file="file://$PROJECT_DIR$/src/Shared/ApiCache/Reducers/FriendsReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/ApiCache/Constants/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="true" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Roots/rootReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/roots/rootReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -750,17 +747,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/ApiCache/Reducers/ProjectsReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Actions/index.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Conversations/Actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -768,7 +755,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/CodeRoom/Components/CodeResult.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/CodeRoom/Components/CodeResult.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
@@ -776,17 +763,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/CodeRoom/index.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/CodeRoom/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Constants/actionTypes.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Conversations/Constants/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -794,17 +781,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Reducers/MessagesReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Conversations/Reducers/MessagesReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Reducers/ConversationsReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Conversations/Reducers/ConversationsReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -812,7 +799,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Components/Messages.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Conversations/Components/Messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
@@ -820,7 +807,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/Components/Message.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Conversations/Components/Message.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
@@ -828,22 +815,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/Conversations/index.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/Conversations/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pages/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,7 +828,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -875,25 +852,251 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+    <entry file="file://$PROJECT_DIR$/src/shared/components/hoc/Require_Authentication.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="504">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/postRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        <state relative-caret-position="630">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/FriendsReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#59#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/ProjectsReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/ausers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/bportfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/cprojects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/dcontributors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/epost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/flikes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/gcomments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/hdirect_messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/ifriends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/messagesRoutes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Components/GithubAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="66" column="7" lean-forward="false" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Components/GoogleAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/entities/constants/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Components/LoginForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/entities/constants/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/roots/rootEpic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
