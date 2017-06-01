@@ -1,9 +1,7 @@
 import firebase from 'firebase';
 import React from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../Actions';
 
-const GoogleAuth = ({ user, redirect, authenticate }) => {
+const GoogleAuth = ({ redirect, authenticate }) => {
   const signIn = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider).then((result) => {
@@ -33,4 +31,4 @@ const GoogleAuth = ({ user, redirect, authenticate }) => {
   );
 };
 
-export default connect(({ user }) => ({ user }), actions)(GoogleAuth);
+export default GoogleAuth;

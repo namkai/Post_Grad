@@ -2,7 +2,7 @@ import firebase from 'firebase';
 import 'firebase/auth';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { authenticate } from '../shared/authentication/Actions';
+import { authenticate } from '../entities/authentication/actions/index';
 import Navbar from '../shared/components/Navbar';
 import Messages from './Conversations/index';
 

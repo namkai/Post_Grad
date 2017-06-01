@@ -13,7 +13,7 @@ import Room from './pages/CodeRoom';
 import Feed from './pages/Feed/index';
 import ProjectList from './pages/Profile/Components/ProjectList';
 import Profile from './pages/Profile/index';
-import LoginForm from './shared/authentication/Components/LoginForm';
+import LoginForm from './pages/LogIn/components/LoginForm';
 
 import requireAuth from './shared/components/hoc/Require_Authentication';
 import configureStore from './store/configureStore';

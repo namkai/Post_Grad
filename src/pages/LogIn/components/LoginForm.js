@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import logo from '../../../../style/v4/docs/assets/img/brand.png';
-import * as auth from '../Actions';
+import * as auth from '../../../entities/authentication/actions/index';
+import * as user from '../../../entities/user/actions'
 import GithubAuth from './GithubAuth';
 import GoogleAuth from './GoogleAuth';
 
@@ -46,7 +47,7 @@ class LoginForm extends Component {
 			console.log('i\'m the error', error);
 			firebase.auth().createUserWithEmailAndPassword(email, password).catch((NewError) => {
 				console.log('I\'m the error to create a user', NewError);
-				this.setState({ error: 'authentication Failed.' });
+				this.setState({ error: 'LogIn Failed.' });
 			});
 		}
 	};
@@ -90,10 +91,10 @@ class LoginForm extends Component {
 							/>
 						</div>
 						<div className="form-group mb-3">
-							<GoogleAuth redirect={this.redirect}/>
+							<GoogleAuth {...this.props} />
 						</div>
 						<div className="form-group mb-3">
-							<GithubAuth redirect={this.redirect}/>
+							<GithubAuth {...this.props} />
 						</div>
 
 						<div className="mb-5">
@@ -126,4 +127,4 @@ const style = {
 	},
 };
 
-export default connect(null, auth)(LoginForm);
+export default connect(null, {...user, ...auth})(LoginForm);

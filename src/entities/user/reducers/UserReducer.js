@@ -1,4 +1,4 @@
-import initialState from '../../initialState/initialState';
+import initialState from '../../../shared/initialState/initialState';
 
 export default function (state = initialState.user, action) {
 	console.log(action, `i'm the action!`)

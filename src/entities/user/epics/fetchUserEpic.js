@@ -1,8 +1,8 @@
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/catch';
 import { ajax } from 'rxjs/observable/dom/ajax';
-import * as type from '../actionTypes';
-import * as api from '../../entities/constants/api';
+import * as type from '../constants/actionTypes';
+import * as api from '../constants/apiTypes';
 
 const fetchUserEpic = action$ =>
 	action$.ofType(type.FETCH_USER)

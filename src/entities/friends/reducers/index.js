@@ -1,9 +1,9 @@
-import initialState from '../../initialState/initialState';
-import * as type from '../constants/actionTypes';
+import initialState from '../../../shared/initialState/initialState';
+//import * as type from '../constants/actionTypes';
 
 export default function (state = initialState.friends, action) {
 	switch (action.type) {
-	case type.ADD_FRIEND:
+	case `ADD_FRIEND`:
 		return [
 			...state,
 			action.payload,
