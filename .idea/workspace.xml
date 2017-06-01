@@ -2,86 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acd613bd-09d9-4d3e-bf17-387a232233c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/shared/entities/constants/api.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/App.js" afterPath="$PROJECT_DIR$/src/pages/App.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/CodeRoom/Components/CodeResult.js" afterPath="$PROJECT_DIR$/src/pages/CodeRoom/Components/CodeResult.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/CodeRoom/index.js" afterPath="$PROJECT_DIR$/src/pages/CodeRoom/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Actions/index.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Actions/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/Conversation.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/Conversation.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/ConversationList.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/ConversationList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/Message.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/Message.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/MessageList.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/MessageList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Components/Messages.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Components/Messages.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Constants/actionTypes.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Constants/actionTypes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Reducers/ConversationsReducer.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Reducers/ConversationsReducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/Reducers/MessagesReducer.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/Reducers/MessagesReducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Conversations/index.js" afterPath="$PROJECT_DIR$/src/pages/Conversations/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/FeedBody.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/FeedBody.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/FeedHeader.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/FeedHeader.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/FeedPhotos.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/FeedPhotos.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/ListItem.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/ListItem.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/ListModal.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/ListModal.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/Photo.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/Photo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedAbout/index.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedAbout/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/Post.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/Post.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/PostList.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/PostList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/SubmitPost.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/SubmitPost.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Components/FeedStream/index.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Components/FeedStream/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Selectors/SelectedFeed.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Selectors/SelectedFeed.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/Selectors/SelectedProjects.js" afterPath="$PROJECT_DIR$/src/pages/Feed/Selectors/SelectedProjects.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Feed/index.js" afterPath="$PROJECT_DIR$/src/pages/Feed/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/Components/ProfileHeader.js" afterPath="$PROJECT_DIR$/src/pages/Profile/Components/ProfileHeader.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/Components/Project.js" afterPath="$PROJECT_DIR$/src/pages/Profile/Components/Project.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/Components/ProjectList.js" afterPath="$PROJECT_DIR$/src/pages/Profile/Components/ProjectList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Pages/Profile/index.js" afterPath="$PROJECT_DIR$/src/pages/Profile/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Roots/rootEpic.js" afterPath="$PROJECT_DIR$/src/roots/rootEpic.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Roots/rootReducer.js" afterPath="$PROJECT_DIR$/src/roots/rootReducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Constants/actionTypes.js" afterPath="$PROJECT_DIR$/src/shared/entities/constants/actionTypes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/FriendsReducer.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/FriendsReducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/ProjectsReducer.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/ProjectsReducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/UserReducer.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/ApiCache/Reducers/index.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Actions.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Actions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Components/GithubAuth.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Components/GithubAuth.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Components/GoogleAuth.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Components/GoogleAuth.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Components/LoginForm.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Components/LoginForm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/Reducer.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Reducer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Authentication/actionTypes.js" afterPath="$PROJECT_DIR$/src/shared/authentication/actionTypes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/Components/Navbar.js" afterPath="$PROJECT_DIR$/src/shared/components/Navbar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/HOC/Require_Authentication.js" afterPath="$PROJECT_DIR$/src/shared/components/hoc/Require_Authentication.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/initialState/initialState.js" afterPath="$PROJECT_DIR$/src/shared/initialState/initialState.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Shared/initialState/projectState.js" afterPath="$PROJECT_DIR$/src/shared/initialState/projectState.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="$PROJECT_DIR$/.eslintrc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/ausers.js" afterPath="$PROJECT_DIR$/seeds/ausers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/bportfolio.js" afterPath="$PROJECT_DIR$/seeds/bportfolio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/cprojects.js" afterPath="$PROJECT_DIR$/seeds/cprojects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/dcontributors.js" afterPath="$PROJECT_DIR$/seeds/dcontributors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/epost.js" afterPath="$PROJECT_DIR$/seeds/epost.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/flikes.js" afterPath="$PROJECT_DIR$/seeds/flikes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/gcomments.js" afterPath="$PROJECT_DIR$/seeds/gcomments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/hdirect_messages.js" afterPath="$PROJECT_DIR$/seeds/hdirect_messages.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seeds/ifriends.js" afterPath="$PROJECT_DIR$/seeds/ifriends.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Store/configureStore.js" afterPath="$PROJECT_DIR$/src/Store/configureStore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/dist/toolkit.js" afterPath="$PROJECT_DIR$/style/v4/dist/toolkit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/docs/assets/js/toolkit.js" afterPath="$PROJECT_DIR$/style/v4/docs/assets/js/toolkit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/button.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/carousel.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/collapse.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/collapse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/dropdown.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/dropdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/js/bootstrap/modal.js" afterPath="$PROJECT_DIR$/style/v4/js/bootstrap/modal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/style/v4/scss/bootstrap/_list-group.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/style/v4/scss/bootstrap/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/style/v4/scss/bootstrap/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/components.scss" afterPath="$PROJECT_DIR$/style/v4/scss/components.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/custom/docs.scss" afterPath="$PROJECT_DIR$/style/v4/scss/custom/docs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/v4/scss/variables.scss" afterPath="$PROJECT_DIR$/style/v4/scss/variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedBody.test.js" afterPath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedBody.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedHeader.test.js" afterPath="$PROJECT_DIR$/tests/pages/Feed/FeedAbout/FeedHeader.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/Feed/index.test.js" afterPath="$PROJECT_DIR$/tests/pages/Feed/index.test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/pages/app.test.js" afterPath="$PROJECT_DIR$/tests/pages/app.test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/shared/authentication/epics/addUserEpic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/roots/rootEpic.js" afterPath="$PROJECT_DIR$/src/roots/rootEpic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shared/authentication/Actions.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shared/authentication/Reducer.js" afterPath="$PROJECT_DIR$/src/shared/authentication/Reducer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shared/authentication/actionTypes.js" afterPath="$PROJECT_DIR$/src/shared/authentication/actionTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js" afterPath="$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js" afterPath="$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -109,23 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginForm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shared/authentication/Components/LoginForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shared/authentication/Reducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,8 +49,8 @@
       <file leaf-file-name="actionTypes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shared/authentication/actionTypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            <state relative-caret-position="324">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,11 +59,21 @@
       <file leaf-file-name="rootEpic.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/roots/rootEpic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rootReducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/roots/rootReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,12 +90,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="addUserEpic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/shared/authentication/epics/addUserEpic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="180">
               <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,8 +117,8 @@
       <file leaf-file-name="UserReducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -190,16 +129,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shared/entities/constants/api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -237,8 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Data/Authentication/AuthenticationReducer.js" />
-        <option value="$PROJECT_DIR$/src/Data/Authentication/Actions.js" />
         <option value="$PROJECT_DIR$/src/Data/Authentication/Reducer.js" />
         <option value="$PROJECT_DIR$/src/Data/Friends/Reducer.js" />
         <option value="$PROJECT_DIR$/src/Data/User/Reducers/FriendsReducer.js" />
@@ -282,11 +209,13 @@
         <option value="$PROJECT_DIR$/src/shared/entities/constants/api.js" />
         <option value="$PROJECT_DIR$/src/shared/entities/constants/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/shared/entities/epics/fetchUserEpic.js" />
-        <option value="$PROJECT_DIR$/src/shared/authentication/actionTypes.js" />
-        <option value="$PROJECT_DIR$/src/shared/authentication/Actions.js" />
         <option value="$PROJECT_DIR$/src/shared/authentication/Components/LoginForm.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/Reducer.js" />
         <option value="$PROJECT_DIR$/src/roots/rootEpic.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/Actions.js" />
         <option value="$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/shared/authentication/epics/addUserEpic.js" />
         <option value="$PROJECT_DIR$/src/shared/authentication/epics/fetchUserEpic.js" />
       </list>
     </option>
@@ -490,24 +419,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostGrad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PostGrad" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="roots" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -652,12 +563,12 @@
       <workItem from="1495834664291" duration="1280000" />
       <workItem from="1496006417224" duration="439000" />
       <workItem from="1496179773063" duration="7918000" />
-      <workItem from="1496256986415" duration="5816000" />
+      <workItem from="1496256986415" duration="7573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178081000" />
+    <option name="totallyTimeSpent" value="179838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -716,7 +627,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Data/Friends/Actions.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/User/Constants/actionTypes.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/Friends/actionTypes.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/User/Actions/index.js" />
@@ -737,16 +647,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Constants/actionTypes.js" />
-    <entry file="file://$PROJECT_DIR$/src/roots/rootReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Conversations/Actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1015,34 +915,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/authentication/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shared/entities/constants/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1065,29 +941,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/roots/rootEpic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/index.js">
+    <entry file="file://$PROJECT_DIR$/src/roots/rootReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/UserReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/entities/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/Actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shared/authentication/epics/addUserEpic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
